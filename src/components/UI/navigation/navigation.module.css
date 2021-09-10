@@ -1,7 +1,7 @@
 .nav {
-  background-color: aqua;
-  height: 8rem;
+  flex: 0 1 8rem;
   width: 100%;
+  padding: 0 0.5rem;
 
   display: flex;
   align-items: center;

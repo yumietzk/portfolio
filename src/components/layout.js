@@ -12,7 +12,7 @@ import * as styles from './layout.module.css';
 const Layout = ({ children }) => {
   return (
     <div className={styles.container}>
-      {/* <title>{pageTitle} | {data.site.siteMetadata.title}</title> */}
+      <title>Yumie.T | Front-end Developer</title>
       {children}
     </div>
   );

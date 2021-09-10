@@ -5,3 +5,43 @@
   flex-direction: column;
   align-items: center;
 }
+
+.header-title {
+  flex: 1;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  flex: 1;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-text > h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.header-text > h4 {
+  font-size: 3rem;
+}
+
+.header-img {
+  flex: 0 1 45%;
+  height: 90%;
+}
+
+.header-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
