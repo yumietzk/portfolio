@@ -1,10 +1,17 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Home from '../components/sections/home';
+import About from '../components/sections/about';
+import Project from '../components/sections/project';
+import Contact from '../components/sections/contact';
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>Hi, I'm Yumie 👋</h1>
+      <Home />
+      <About />
+      <Project />
+      <Contact />
     </Layout>
   );
 };

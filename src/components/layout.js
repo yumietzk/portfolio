@@ -7,15 +7,13 @@ import '@fontsource/vollkorn/600.css';
 import '@fontsource/vollkorn/600-italic.css';
 import '@fontsource/vollkorn/700.css';
 import '@fontsource/vollkorn/800.css';
-import './layout.module.css';
+import * as styles from './layout.module.css';
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <header>
-        <nav></nav>
-      </header>
-      <main>{children}</main>
+    <div className={styles.container}>
+      {/* <title>{pageTitle} | {data.site.siteMetadata.title}</title> */}
+      {children}
     </div>
   );
 };

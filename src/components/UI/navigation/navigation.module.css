@@ -1,0 +1,31 @@
+.nav {
+  background-color: aqua;
+  height: 8rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 4rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}

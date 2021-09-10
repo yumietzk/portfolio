@@ -4,11 +4,12 @@
   box-sizing: inherit;
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "Vollkorn", sans-serif;
+  font-family: 'Vollkorn', sans-serif;
   font-weight: 400;
   background-color: #ffb700;
   color: #000;
 }
 
-/* .container {
-} */
+.container {
+  padding: 1.5rem 2rem;
+}
