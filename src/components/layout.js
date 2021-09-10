@@ -7,12 +7,23 @@ import '@fontsource/vollkorn/600.css';
 import '@fontsource/vollkorn/600-italic.css';
 import '@fontsource/vollkorn/700.css';
 import '@fontsource/vollkorn/800.css';
+import { useStaticQuery, graphql } from 'gatsby';
 import * as styles from './layout.module.css';
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
   return (
     <div className={styles.container}>
-      <title>Yumie.T | Front-end Developer</title>
+      <title>{data.site.siteMetadata.title}</title>
       {children}
     </div>
   );

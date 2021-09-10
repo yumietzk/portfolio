@@ -9,7 +9,7 @@ const Home = () => {
       <Navigation />
       <div className={styles.headerTitle}>
         <div className={styles.headerText}>
-          <h1>Hi, I'm Yumie 👋</h1>
+          <h1>Hi, I'm Yumie 👋🏻</h1>
           <h4>A front-end developer based in Toronto.</h4>
         </div>
         <div className={styles.headerImg}>

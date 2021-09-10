@@ -8,7 +8,7 @@
 
 .header-title {
   flex: 1;
-  padding: 2rem;
+  padding: 0 2rem;
 
   display: flex;
   align-items: center;
