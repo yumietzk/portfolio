@@ -17,7 +17,7 @@
 
 .header-text {
   flex: 1;
-  margin-right: 3rem;
+  margin-right: 3.5rem;
   animation: moveInBottom 1s;
 
   display: flex;
@@ -55,10 +55,10 @@
 
 .header-img {
   flex: 0 1 45%;
-  animation: moveInRight 1s;
+  animation: moveInBottom 1s;
 }
 
-@keyframes moveInRight {
+/* @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(100rem);
@@ -72,7 +72,7 @@
     opacity: 1;
     transform: translate(0);
   }
-}
+} */
 
 .header-poster {
   display: block;
