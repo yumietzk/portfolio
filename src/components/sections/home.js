@@ -23,14 +23,12 @@ const Home = () => {
       <div className={styles.headerTitle}>
         <div className={styles.headerText}>
           <h1>Hi, I'm Yumie 👋🏻</h1>
-          <h4>A front-end developer based in Toronto.</h4>
+          <h4>A front-end developer based in Toronto</h4>
         </div>
         <div className={styles.headerImg}>
-          <GatsbyImage
-            image={image}
-            alt="My profile photo"
-            // className={styles.headerPoster}
-          />
+          <div className={styles.headerPoster}>
+            <GatsbyImage image={image} alt="My profile photo" />
+          </div>
         </div>
       </div>
     </header>

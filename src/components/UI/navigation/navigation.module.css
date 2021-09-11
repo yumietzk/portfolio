@@ -1,10 +1,11 @@
 .nav {
-  height: 8rem;
+  height: 10rem;
   width: 100%;
-  padding: 1rem 2rem;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
+  padding: 3rem;
 
   display: flex;
   align-items: center;
@@ -23,8 +24,8 @@
   align-items: center;
 }
 
-.nav-item {
-  margin-left: 4rem;
+.nav-item:not(:last-child) {
+  margin-right: 4rem;
 }
 
 .nav-link {
