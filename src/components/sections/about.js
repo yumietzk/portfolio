@@ -56,6 +56,14 @@ const About = () => {
           <p>Mongo DB</p>
         </div>
         <div className={styles.skill}>
+          <SiIcons.SiGatsby className={styles.icon} />
+          <p>Gatsby</p>
+        </div>
+        <div className={styles.skill}>
+          <SiIcons.SiGraphql className={styles.icon} />
+          <p>GraphQL</p>
+        </div>
+        <div className={styles.skill}>
           <FaIcons.FaGithub className={styles.icon} />
           <p>Github</p>
         </div>

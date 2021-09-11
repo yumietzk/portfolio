@@ -1,0 +1,87 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 40rem;
+}
+
+.item:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.card {
+  flex: 0 1 50%;
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.description {
+  flex: 1;
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.stack {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link-visit:link,
+.link-visit:visited,
+.link-source:link,
+.link-source:visited {
+  text-decoration: none;
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  color: #fff;
+  font-size: 1.3rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.link-visit:hover,
+.link-visit:active,
+.link-source:hover,
+.link-source:active {
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.link-visit {
+  margin-right: 1rem;
+}
+
+.link-source {
+  margin-left: 1rem;
+}
+
+.link-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  fill: #fff;
+  margin-bottom: 0.2rem;
+}
