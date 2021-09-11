@@ -18,9 +18,9 @@ const About = () => {
   return (
     <section className={styles.about}>
       <h1>About</h1>
-      <p className={styles.aboutMe}>
+      <div className={styles.aboutMe}>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
-      </p>
+      </div>
       <h2>Skills & Tools</h2>
       <div className={styles.skills}>
         <div className={styles.skill}>

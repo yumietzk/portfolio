@@ -11,12 +11,12 @@ const ProjectItem = ({ data }) => {
   return (
     <div className={styles.item}>
       <div className={styles.card}>
-        <div className={styles.cardFront}>
+        <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
         </div>
-        {/* <div className={styles.cardBack}>
+        <div className={styles.cardHidden}>
           <MDXRenderer>{data.body}</MDXRenderer>
-        </div> */}
+        </div>
       </div>
       <div className={styles.description}>
         <h3 className={styles.title}>{data.frontmatter.title}</h3>
