@@ -23,31 +23,42 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <h1>Contact</h1>
-      <p>Please reach me at: </p>
-      <a href={`mailto:${data.site.siteMetadata.social.email}`}>
+      <p className={styles.message}>Please reach me at: </p>
+      <a
+        className={styles.email}
+        href={`mailto:${data.site.siteMetadata.social.email}`}
+      >
         {data.site.siteMetadata.social.email}
       </a>
-      <div>
-        <a href={`https://github.com/${data.site.siteMetadata.social.github}`}>
-          <FaIcons.FaGithub />
+      <div className={styles.sns}>
+        <a
+          href={`https://github.com/${data.site.siteMetadata.social.github}`}
+          target="_blank"
+        >
+          <FaIcons.FaGithub className={`${styles.icon} ${styles.github}`} />
         </a>
         <a
           href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`}
+          target="_blank"
         >
-          <FaIcons.FaLinkedin />
+          <FaIcons.FaLinkedin className={`${styles.icon} ${styles.linkedin}`} />
         </a>
         <a
           href={`https://www.facebook.com/${data.site.siteMetadata.social.facebook}`}
+          target="_blank"
         >
-          <FaIcons.FaFacebook />
+          <FaIcons.FaFacebook className={`${styles.icon} ${styles.facebook}`} />
         </a>
         <a
           href={`https://www.instagram.com/${data.site.siteMetadata.social.instagram}`}
+          target="_blank"
         >
-          <FaIcons.FaInstagram />
+          <FaIcons.FaInstagram
+            className={`${styles.icon} ${styles.instagram}`}
+          />
         </a>
       </div>
-      <p>Copyright ©︎ 2021, Yumie Tsuuzki</p>
+      <p className={styles.copyright}>Copyright ©︎ 2021, Yumie Tsuuzki</p>
     </div>
   );
 };

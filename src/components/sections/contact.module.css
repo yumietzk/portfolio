@@ -1,5 +1,9 @@
 .contact {
   padding: 10rem 1rem 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact > h1 {
@@ -7,4 +11,49 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.message {
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 3.5rem;
+}
+
+.email {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.sns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 30%;
+  margin-bottom: 5rem;
+}
+
+.icon {
+  font-size: 3.5rem;
+  fill: rgb(43, 43, 43);
+}
+
+.github:hover {
+  fill: #000;
+}
+
+.linkedin:hover {
+  fill: #007bb5;
+}
+
+.facebook:hover {
+  fill: #3b5998;
+}
+
+.instagram:hover {
+  fill: #e95950;
+}
+
+.copyright {
+  font-size: 1.5rem;
 }
