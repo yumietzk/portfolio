@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import ProjectItem from '../projectItem';
+import ProjectItem from '../template/projectItem';
 import * as styles from './projects.module.css';
 
 const Projects = () => {
