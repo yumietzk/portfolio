@@ -1,9 +1,22 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Navigation from '../UI/navigation/navigation';
 import * as styles from './home.module.css';
 
 const Home = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "home-image.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `);
+
+  const image = getImage(data.file);
+
   return (
     <header className={styles.header}>
       <Navigation />
@@ -13,10 +26,10 @@ const Home = () => {
           <h4>A front-end developer based in Toronto.</h4>
         </div>
         <div className={styles.headerImg}>
-          <StaticImage
-            src="../../images/header-image.jpg"
+          <GatsbyImage
+            image={image}
             alt="My profile photo"
-            className={styles.headerPoster}
+            // className={styles.headerPoster}
           />
         </div>
       </div>
