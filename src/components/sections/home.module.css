@@ -18,6 +18,7 @@
 .header-text {
   flex: 1;
   margin-right: 3rem;
+  animation: moveInBottom 1s;
 
   display: flex;
   flex-direction: column;
@@ -36,8 +37,41 @@
   word-spacing: 5px;
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100rem);
+  }
+
+  80% {
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 .header-img {
   flex: 0 1 45%;
+  animation: moveInRight 1s;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100rem);
+  }
+
+  80% {
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 .header-poster {
