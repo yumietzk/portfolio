@@ -95,7 +95,7 @@
 
 .btn {
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
   border: none;
@@ -104,4 +104,9 @@
 
 .btn-icon {
   font-size: 3rem;
+  transition: all 0.3s;
+}
+
+.btn:hover .btn-icon {
+  transform: scale(1.1);
 }
