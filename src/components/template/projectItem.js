@@ -24,6 +24,7 @@ const ProjectItem = ({ data, item }) => {
         </div>
         <div className={styles.cardHidden}>
           <MDXRenderer>{data.body}</MDXRenderer>
+          <button className={styles.cardBtn}>More detail</button>
         </div>
       </div>
       <div className={styles.description}>
