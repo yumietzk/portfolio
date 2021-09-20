@@ -24,6 +24,7 @@ const Home = () => {
         <div className={styles.headerText}>
           <h1>Hi, I'm Yumie 👋🏻</h1>
           <h4>A front-end developer based in Toronto</h4>
+          <a>About Me</a>
         </div>
         <div className={styles.headerImg}>
           <div className={styles.headerPoster}>

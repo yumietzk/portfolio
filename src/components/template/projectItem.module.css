@@ -1,13 +1,17 @@
 .item {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
-  height: 100%;
+  width: 95%;
 }
 
 .item:not(:last-child) {
-  margin-right: 3rem;
+  margin-bottom: 9.5rem;
+}
+
+.item-reverse {
+  flex-direction: row-reverse;
 }
 
 .card {
@@ -72,6 +76,7 @@
 }
 
 .stack {
+  width: 80%;
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 1.4rem;

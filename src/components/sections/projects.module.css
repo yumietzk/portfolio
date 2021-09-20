@@ -1,20 +1,18 @@
 .projects {
   padding: 20rem 1rem 10rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects > h1 {
   font-size: 6rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 .items {
-  max-width: 100vw;
-  height: 30rem;
-  margin: 0 auto;
-
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }

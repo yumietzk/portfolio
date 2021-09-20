@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import * as BsIcons from 'react-icons/bs';
 import * as FaIcons from 'react-icons/fa';
 import * as styles from './projectItem.module.css';
 
-const ProjectItem = ({ data }) => {
+const ProjectItem = ({ data, item }) => {
+  const [reverse, setReverse] = useState(false);
+
+  useEffect(() => {
+    if (item % 2 === 1) {
+      setReverse(true);
+    }
+  }, []);
+
   const image = getImage(data.frontmatter.image);
 
   return (
-    <div className={styles.item}>
+    <div className={`${styles.item} ${reverse ? styles.itemReverse : null}`}>
       <div className={styles.card}>
         <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />

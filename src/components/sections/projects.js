@@ -41,8 +41,8 @@ const Projects = () => {
     <div className={styles.projects}>
       <h1>Projects</h1>
       <div className={styles.items}>
-        {data.allFile.edges.map((edge) => (
-          <ProjectItem key={edge.node.id} data={edge.node.childMdx} />
+        {data.allFile.edges.map((edge, i) => (
+          <ProjectItem key={edge.node.id} data={edge.node.childMdx} item={i} />
         ))}
       </div>
     </div>
