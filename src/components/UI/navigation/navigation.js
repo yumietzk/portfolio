@@ -1,19 +1,34 @@
 import React from 'react';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import * as styles from './navigation.module.css';
 
 const Navigation = () => {
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>YUMIE.T</div>
+      <button className={styles.logo} onClick={() => scrollTo('#top')}>
+        YUMIE.T
+      </button>
       <ul className={styles.navLinks}>
         <li className={styles.navItem}>
-          <a className={styles.navLink}>About</a>
+          <button className={styles.navLink} onClick={() => scrollTo('#about')}>
+            About
+          </button>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.navLink}>Projects</a>
+          <button
+            className={styles.navLink}
+            onClick={() => scrollTo('#projects')}
+          >
+            Projects
+          </button>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.navLink}>Contact</a>
+          <button
+            className={styles.navLink}
+            onClick={() => scrollTo('#contact')}
+          >
+            Contact
+          </button>
         </li>
       </ul>
     </nav>

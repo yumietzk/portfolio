@@ -16,7 +16,7 @@ const About = () => {
   `);
 
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="about">
       <h1>About</h1>
       <div className={styles.aboutMe}>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
