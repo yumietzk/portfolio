@@ -12,12 +12,12 @@
 }
 
 .about-me > p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 75%;
   margin: 0 auto;
   text-align: center;
-  line-height: 2.7;
-  margin-bottom: 7rem;
+  line-height: 2;
+  margin-bottom: 10rem;
 }
 
 .about > h2 {
@@ -25,7 +25,7 @@
   text-align: center;
   font-style: italic;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   position: relative;
   z-index: 5;
 }
@@ -48,6 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   width: 90%;
   margin: 0 auto;
