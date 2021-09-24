@@ -40,5 +40,6 @@
 }
 
 .nav-link:hover {
-  border-bottom: 3px solid #fff;
+  border-bottom: 2.5px solid #fff;
+  transform: skewX(-15deg);
 }

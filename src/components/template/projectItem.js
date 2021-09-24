@@ -24,7 +24,13 @@ const ProjectItem = ({ data, item }) => {
         </div>
         <div className={styles.cardHidden}>
           <MDXRenderer>{data.body}</MDXRenderer>
-          <button className={styles.cardBtn}>More detail</button>
+          <a
+            className={styles.cardBtn}
+            href={data.frontmatter.source}
+            target="_blank"
+          >
+            More detail
+          </a>
         </div>
       </div>
       <div className={styles.description}>
