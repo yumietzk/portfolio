@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import * as FaIcons from 'react-icons/fa';
 import * as styles from './contact.module.css';
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -30,7 +36,7 @@ const Contact = () => {
       >
         {data.site.siteMetadata.social.email}
       </a>
-      <div className={styles.sns}>
+      <div className={styles.sns} data-aos="zoom-in">
         <a
           href={`https://github.com/${data.site.siteMetadata.social.github}`}
           target="_blank"

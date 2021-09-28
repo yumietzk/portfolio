@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import * as FaIcons from 'react-icons/fa';
 import * as DiIcons from 'react-icons/di';
 import * as SiIcons from 'react-icons/si';
 import * as styles from './about.module.css';
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const data = useStaticQuery(graphql`
     query {
       mdx(slug: { eq: "aboutme" }) {
@@ -22,7 +28,7 @@ const About = () => {
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </div>
       <h2>Skills & Tools</h2>
-      <div className={styles.skills}>
+      <div className={styles.skills} data-aos="fade-up">
         <div className={styles.skill}>
           <FaIcons.FaHtml5 className={styles.icon} />
           <p>HTML</p>

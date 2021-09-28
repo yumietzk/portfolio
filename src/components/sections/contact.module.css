@@ -35,23 +35,28 @@
 
 .icon {
   font-size: 3.5rem;
-  fill: rgb(43, 43, 43);
+  fill: rgb(24, 24, 24);
+  transition: all 0.3s;
 }
 
 .github:hover {
   fill: #000;
+  transform: scale(1.02);
 }
 
 .linkedin:hover {
   fill: #007bb5;
+  transform: scale(1.02);
 }
 
 .facebook:hover {
   fill: #3b5998;
+  transform: scale(1.02);
 }
 
 .instagram:hover {
   fill: #e95950;
+  transform: scale(1.02);
 }
 
 .copyright {

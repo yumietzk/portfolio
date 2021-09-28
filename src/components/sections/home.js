@@ -1,40 +1,32 @@
-import React from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
-// import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React, { useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Typewriter from 'typewriter-effect';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import * as IoIcons from 'react-icons/io';
 import Navigation from '../UI/navigation/navigation';
 import * as styles from './home.module.css';
 
 const Home = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "home-image.png" }) {
-  //       childImageSharp {
-  //         gatsbyImageData
-  //       }
-  //     }
-  //   }
-  // `);
-
-  // const image = getImage(data.file);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <header className={styles.header} id="top">
       <Navigation />
       <div className={styles.headerTitle}>
-        {/* <div className={styles.headerImg}> */}
-        <div className={styles.headerText}>
+        <div className={styles.headerText} data-aos="zoom-in">
           <h1>Hi, I'm Yumie 👋🏻</h1>
-          {/* <h4>A front-end developer based in Toronto.</h4> */}
+
           <Typewriter
             options={{
               loop: true,
             }}
             onInit={(typewriter) => {
               typewriter
+                .pauseFor(1800)
                 .typeString('A front-end developer based in Toronto.')
                 .pauseFor(2000)
                 .deleteAll()
@@ -49,13 +41,11 @@ const Home = () => {
           />
         </div>
         {/* </div> */}
-        <div className={styles.headerImg}>
+        <div className={styles.headerImg} data-aos="flip-up">
           <figure className={styles.headerFig}>
             <StaticImage
               src="../../../assets/home-image.png"
               alt="My profile photo"
-              // className={styles.headerPoster}
-              // imgClassName={styles.headerPoster}
             />
           </figure>
         </div>

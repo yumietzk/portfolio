@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import * as BsIcons from 'react-icons/bs';
 import * as FaIcons from 'react-icons/fa';
 import * as styles from './projectItem.module.css';
@@ -14,10 +16,17 @@ const ProjectItem = ({ data, item }) => {
     }
   }, []);
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const image = getImage(data.frontmatter.image);
 
   return (
-    <div className={`${styles.item} ${reverse ? styles.itemReverse : null}`}>
+    <div
+      className={`${styles.item} ${reverse ? styles.itemReverse : null}`}
+      data-aos={reverse ? 'fade-left' : 'fade-right'}
+    >
       <div className={styles.card}>
         <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
