@@ -114,6 +114,7 @@
   border-radius: 10rem;
   color: #fff;
   font-size: 1.3rem;
+  transition: all 0.3s;
 
   display: flex;
   align-items: center;
@@ -123,7 +124,8 @@
 .link-visit:active,
 .link-source:hover,
 .link-source:active {
-  background-color: rgba(0, 0, 0, 0.705);
+  background-color: #fff;
+  color: #000;
 }
 
 .link-visit {
@@ -140,4 +142,12 @@
   background-color: transparent;
   fill: #fff;
   margin-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link-visit:hover .link-icon,
+.link-visit:active .link-icon,
+.link-source:hover .link-icon,
+.link-source:active .link-icon {
+  fill: #000;
 }

@@ -34,12 +34,11 @@
   font-size: 2rem;
   text-transform: uppercase;
   border: none;
-  border-bottom: 3px solid transparent;
   cursor: pointer;
+  border-bottom: 3px solid transparent;
   transition: all 0.3s;
 }
 
 .nav-link:hover {
-  border-bottom: 2.5px solid #fff;
-  transform: skewX(-15deg);
+  border-bottom: 3px solid #fff;
 }

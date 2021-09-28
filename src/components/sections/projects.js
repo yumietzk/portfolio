@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+// import { useInView } from 'react-intersection-observer';
 import ProjectItem from '../template/projectItem';
 import * as styles from './projects.module.css';
 
@@ -37,6 +38,14 @@ const Projects = () => {
     }
   `);
 
+  // const renderProjects = () => {
+  //   if (inView) {
+  //     return data.allFile.edges.map((edge, i) => (
+  //       <ProjectItem key={edge.node.id} data={edge.node.childMdx} item={i} />
+  //     ));
+  //   }
+  // };
+
   return (
     <div className={styles.projects} id="projects">
       <h1>Projects</h1>
@@ -44,6 +53,7 @@ const Projects = () => {
         {data.allFile.edges.map((edge, i) => (
           <ProjectItem key={edge.node.id} data={edge.node.childMdx} item={i} />
         ))}
+        {/* {renderProjects()} */}
       </div>
     </div>
   );

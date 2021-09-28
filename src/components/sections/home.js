@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useStaticQuery, graphql } from 'gatsby';
 // import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-// import { StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Typewriter from 'typewriter-effect';
 import * as IoIcons from 'react-icons/io';
@@ -25,37 +25,40 @@ const Home = () => {
     <header className={styles.header} id="top">
       <Navigation />
       <div className={styles.headerTitle}>
-        <div className={styles.headerImg}>
-          <div className={styles.headerText}>
-            <h1>Hi, I'm Yumie 👋🏻</h1>
-            {/* <h4>A front-end developer based in Toronto.</h4> */}
-            <Typewriter
-              options={{
-                loop: true,
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString('A front-end developer based in Toronto.')
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString('A sushi lover from Japan.')
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString('A passionate football fan.')
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .start();
-              }}
-            />
-          </div>
-        </div>
-        {/* <div className={styles.headerImg}>
-          <StaticImage
-            src="../../../assets/home-image.png"
-            alt="My profile photo"
-            className={styles.headerPoster}
+        {/* <div className={styles.headerImg}> */}
+        <div className={styles.headerText}>
+          <h1>Hi, I'm Yumie 👋🏻</h1>
+          {/* <h4>A front-end developer based in Toronto.</h4> */}
+          <Typewriter
+            options={{
+              loop: true,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString('A front-end developer based in Toronto.')
+                .pauseFor(2000)
+                .deleteAll()
+                .typeString('A sushi lover from Japan.')
+                .pauseFor(2000)
+                .deleteAll()
+                .typeString('A passionate football fan.')
+                .pauseFor(2000)
+                .deleteAll()
+                .start();
+            }}
           />
-        </div> */}
+        </div>
+        {/* </div> */}
+        <div className={styles.headerImg}>
+          <figure className={styles.headerFig}>
+            <StaticImage
+              src="../../../assets/home-image.png"
+              alt="My profile photo"
+              // className={styles.headerPoster}
+              // imgClassName={styles.headerPoster}
+            />
+          </figure>
+        </div>
       </div>
       <button className={styles.btn} onClick={() => scrollTo('#about')}>
         <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} />
