@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Typewriter from 'typewriter-effect';
 import Aos from 'aos';
@@ -19,7 +19,6 @@ const Home = () => {
       <div className={styles.headerTitle}>
         <div className={styles.headerText} data-aos="zoom-in">
           <h1>Hi, I'm Yumie 👋🏻</h1>
-
           <Typewriter
             options={{
               loop: true,
@@ -40,15 +39,7 @@ const Home = () => {
             }}
           />
         </div>
-        {/* </div> */}
-        <div className={styles.headerImg} data-aos="flip-up">
-          <figure className={styles.headerFig}>
-            <StaticImage
-              src="../../../assets/home-image.png"
-              alt="My profile photo"
-            />
-          </figure>
-        </div>
+        <div className={styles.headerImg}></div>
       </div>
       <button className={styles.btn} onClick={() => scrollTo('#about')}>
         <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} />

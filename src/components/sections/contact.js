@@ -64,7 +64,7 @@ const Contact = () => {
           />
         </a>
       </div>
-      <p className={styles.copyright}>Copyright ©︎ 2021, Yumie Tsuuzki</p>
+      <p className={styles.copyright}>Copyright ©︎ 2021, Yumie Tsuzuki</p>
     </div>
   );
 };
