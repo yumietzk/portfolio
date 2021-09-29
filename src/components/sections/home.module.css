@@ -17,6 +17,14 @@
   align-items: center;
 }
 
+/* 1100px */
+@media only screen and (max-width: 68.75em) {
+  .header-title {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 /* 700px */
 @media only screen and (max-width: 43.75em) {
   .header-title {
@@ -26,7 +34,6 @@
 
 .header-text {
   flex: 0 1 60%;
-  /* width: 50%; */
   padding-right: 10rem;
 
   display: flex;
@@ -38,6 +45,7 @@
 /* 700px */
 @media only screen and (max-width: 43.75em) {
   .header-text {
+    flex: 0 1 40%;
     padding-right: 0;
     align-items: center;
   }
@@ -47,6 +55,13 @@
   font-size: 6rem;
   font-weight: 700;
   margin-bottom: 2rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .header-text > h1 {
+    font-size: 9rem;
+  }
 }
 
 /* 1100px */
@@ -63,10 +78,24 @@
   }
 }
 
+/* 300px */
+@media only screen and (max-width: 18.75em) {
+  .header-text > h1 {
+    font-size: 3.7rem;
+  }
+}
+
 .header-text > div {
   font-size: 4.5rem;
   word-spacing: 4px;
   margin-bottom: 3rem;
+}
+
+/* 300px */
+@media only screen and (max-width: 18.75em) {
+  .header-text > div {
+    font-size: 3.7rem;
+  }
 }
 
 .header-img {
@@ -74,34 +103,34 @@
   background-image: url(../../../assets/home-image.png);
   border-radius: 10rem;
   height: 70%;
-
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
 
-/* .header-fig {
-  height: 80%;
-  width: 80%;
-  border-radius: 10rem;
-  overflow: hidden;
-} */
-
-/* 1100px */
-/* @media only screen and (max-width: 68.75em) {
-  .header-fig {
-    height: 100%;
-    width: 100%;
+/* 900px */
+@media only screen and (max-width: 56.25em) {
+  .header-img {
+    height: 60%;
   }
-} */
+}
 
 /* 700px */
-/* @media only screen and (max-width: 43.75em) {
-  .header-fig {
-    height: 80%;
-    width: 80%;
-    margin-left: 10%;
+@media only screen and (max-width: 43.75em) {
+  .header-img {
+    margin-top: 5rem;
+    /* height: 60%; */
+    width: 50%;
   }
-} */
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .header-img {
+    margin-top: 7rem;
+    /* height: 50%; */
+    width: 70%;
+  }
+}
 
 .btn {
   position: absolute;

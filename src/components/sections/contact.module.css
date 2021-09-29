@@ -41,22 +41,22 @@
 
 .github:hover {
   fill: #000;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .linkedin:hover {
   fill: #007bb5;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .facebook:hover {
   fill: #3b5998;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .instagram:hover {
   fill: #e95950;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .copyright {

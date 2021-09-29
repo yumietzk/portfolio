@@ -25,7 +25,7 @@ const ProjectItem = ({ data, item }) => {
   return (
     <div
       className={`${styles.item} ${reverse ? styles.itemReverse : null}`}
-      data-aos={reverse ? 'fade-left' : 'fade-right'}
+      data-aos={reverse ? 'flip-left' : 'flip-right'}
     >
       <div className={styles.card}>
         <div className={styles.cardItem}>

@@ -39,7 +39,7 @@ const Home = () => {
             }}
           />
         </div>
-        <div className={styles.headerImg}></div>
+        <div className={styles.headerImg} data-aos="flip-up"></div>
       </div>
       <button className={styles.btn} onClick={() => scrollTo('#about')}>
         <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} />

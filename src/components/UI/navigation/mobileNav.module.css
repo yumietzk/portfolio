@@ -1,0 +1,81 @@
+.nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-icon {
+  font-size: 3rem;
+  fill: #000;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover .nav-icon {
+  fill: #fff;
+}
+
+.nav {
+  background-color: #000;
+  width: 23rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  right: 0;
+}
+
+.toggle {
+  flex: 0 1 2rem;
+  align-self: flex-end;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 2rem 2rem 2rem 0;
+}
+
+.toggle-icon {
+  font-size: 3rem;
+  background: none;
+  fill: #fff;
+  transition: all 0.3s;
+}
+
+.toggle:hover .toggle-icon {
+  fill: #ffb700;
+}
+
+.nav-links {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  list-style: none;
+}
+
+.nav-link {
+  margin: 2rem 0;
+  background-color: #000;
+}
+
+.nav-btn {
+  color: #fff;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover {
+  color: #ffb700;
+}

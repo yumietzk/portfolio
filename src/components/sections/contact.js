@@ -36,7 +36,7 @@ const Contact = () => {
       >
         {data.site.siteMetadata.social.email}
       </a>
-      <div className={styles.sns} data-aos="zoom-in">
+      <div className={styles.sns} data-aos="slide-up">
         <a
           href={`https://github.com/${data.site.siteMetadata.social.github}`}
           target="_blank"
