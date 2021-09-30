@@ -31,7 +31,7 @@ const Home = () => {
                 .typeString('A sushi lover from Japan.')
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString('A passionate football fan.')
+                .typeString('A passionate soccer fan.')
                 .pauseFor(2000)
                 .deleteAll()
                 .start();
