@@ -9,7 +9,7 @@ const Navigation = () => {
     width = window.innerWidth;
   }
 
-  const [width, setWidth] = useState(width);
+  const [windowWidth, setWindowWidth] = useState(width);
 
   useEffect(() => {
     window.addEventListener('resize', updateDimension);
@@ -17,7 +17,7 @@ const Navigation = () => {
   }, []);
 
   const updateDimension = () => {
-    setWidth(window.innerWidth);
+    setWindowWidth(window.innerWidth);
   };
 
   return (
@@ -25,7 +25,7 @@ const Navigation = () => {
       <button className={styles.logo} onClick={() => scrollTo('#top')}>
         YUMIE.T
       </button>
-      {width < 450 ? (
+      {windowWidth < 450 ? (
         <MobileNav />
       ) : (
         <ul className={styles.navLinks}>

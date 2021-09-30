@@ -15,7 +15,7 @@ const ProjectItem = ({ data, item }) => {
     width = window.innerWidth;
   }
 
-  const [width, setWidth] = useState(width);
+  const [windowWidth, setWindowWidth] = useState(width);
 
   useEffect(() => {
     if (item % 2 === 1) {
@@ -33,7 +33,7 @@ const ProjectItem = ({ data, item }) => {
   }, []);
 
   const updateDimension = () => {
-    setWidth(window.innerWidth);
+    setWindowWidth(window.innerWidth);
   };
 
   const image = getImage(data.frontmatter.image);
@@ -47,7 +47,7 @@ const ProjectItem = ({ data, item }) => {
         <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
         </div>
-        {width > 400 ? (
+        {windowWidth > 400 ? (
           <div className={styles.cardHidden}>
             <MDXRenderer>{data.body}</MDXRenderer>
             <a
