@@ -9,7 +9,13 @@ import * as styles from './projectItem.module.css';
 
 const ProjectItem = ({ data, item }) => {
   const [reverse, setReverse] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+
+  let width;
+  if (typeof window !== 'undefined') {
+    width = window.innerWidth;
+  }
+
+  const [width, setWidth] = useState(width);
 
   useEffect(() => {
     if (item % 2 === 1) {

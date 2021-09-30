@@ -4,7 +4,12 @@ import MobileNav from '../mobile/mobileNav';
 import * as styles from './navigation.module.css';
 
 const Navigation = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  let width;
+  if (typeof window !== 'undefined') {
+    width = window.innerWidth;
+  }
+
+  const [width, setWidth] = useState(width);
 
   useEffect(() => {
     window.addEventListener('resize', updateDimension);
