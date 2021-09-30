@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { StaticImage } from 'gatsby-plugin-image';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Typewriter from 'typewriter-effect';
 import Aos from 'aos';
@@ -25,7 +24,7 @@ const Home = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .pauseFor(1800)
+                .pauseFor(1900)
                 .typeString('A front-end developer based in Toronto.')
                 .pauseFor(2000)
                 .deleteAll()

@@ -6,17 +6,46 @@
   width: 95%;
 }
 
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .item {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
 .item:not(:last-child) {
   margin-bottom: 10rem;
+}
+
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .item:not(:last-child) {
+    margin-bottom: 16rem;
+  }
 }
 
 .item-reverse {
   flex-direction: row-reverse;
 }
 
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .item-reverse {
+    flex-direction: column;
+  }
+}
+
 .card {
   flex: 0 1 50%;
   position: relative;
+}
+
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .card {
+    margin-bottom: 4rem;
+  }
 }
 
 .card-item {
@@ -46,14 +75,44 @@
   align-items: center;
 }
 
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .card-hidden {
+    width: 90%;
+  }
+}
+
 .card-hidden > p {
   color: #fff;
   background-color: transparent;
   font-weight: 200;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.8;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .card-hidden > p {
+    font-size: 2.7rem;
+    line-height: 2;
+  }
+}
+
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .card-hidden > p {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .card-hidden > p {
+    font-size: 1.7rem;
+  }
 }
 
 .card-btn {
@@ -62,6 +121,14 @@
   font-size: 1.4rem;
   border-radius: 3px;
   cursor: pointer;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .card-btn {
+    font-size: 2.1rem;
+    padding: 1rem 1.5rem;
+  }
 }
 
 .card:hover .card-item {
@@ -80,7 +147,6 @@
 
 .description {
   flex: 1;
-  margin-top: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -92,11 +158,27 @@
   margin-bottom: 1.5rem;
 }
 
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .title {
+    font-size: 4.5rem;
+    margin-bottom: 2.3rem;
+  }
+}
+
 .stack {
   width: 80%;
   font-size: 1.7rem;
   text-align: center;
   margin-bottom: 1.4rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .stack {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .links {
@@ -118,6 +200,17 @@
 
   display: flex;
   align-items: center;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .link-visit:link,
+  .link-visit:visited,
+  .link-source:link,
+  .link-source:visited {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 .link-visit:hover,
@@ -143,6 +236,14 @@
   fill: #fff;
   margin-bottom: 0.2rem;
   transition: all 0.3s;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .link-icon {
+    font-size: 2.3rem;
+    margin-right: 1rem;
+  }
 }
 
 .link-visit:hover .link-icon,

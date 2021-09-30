@@ -9,6 +9,7 @@ import * as styles from './projectItem.module.css';
 
 const ProjectItem = ({ data, item }) => {
   const [reverse, setReverse] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     if (item % 2 === 1) {
@@ -19,6 +20,15 @@ const ProjectItem = ({ data, item }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', updateDimension);
+    return () => window.addEventListener('resize', updateDimension);
+  }, []);
+
+  const updateDimension = () => {
+    setWidth(window.innerWidth);
+  };
 
   const image = getImage(data.frontmatter.image);
 
@@ -31,16 +41,18 @@ const ProjectItem = ({ data, item }) => {
         <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
         </div>
-        <div className={styles.cardHidden}>
-          <MDXRenderer>{data.body}</MDXRenderer>
-          <a
-            className={styles.cardBtn}
-            href={data.frontmatter.source}
-            target="_blank"
-          >
-            More detail
-          </a>
-        </div>
+        {width > 400 ? (
+          <div className={styles.cardHidden}>
+            <MDXRenderer>{data.body}</MDXRenderer>
+            <a
+              className={styles.cardBtn}
+              href={data.frontmatter.source}
+              target="_blank"
+            >
+              More detail
+            </a>
+          </div>
+        ) : null}
       </div>
       <div className={styles.description}>
         <h3 className={styles.title}>{data.frontmatter.title}</h3>

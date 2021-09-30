@@ -85,13 +85,6 @@ const About = () => {
           <SiIcons.SiFirebase className={styles.icon} />
           <p>Firebase</p>
         </div>
-        {/* <div className={styles.skill}>
-          <img
-            src="/Users/yumie/Desktop/Programming/Project/Portfolio/my-portfolio/src/images/express-logo.png"
-            alt="Express logo"
-          />
-          <p>Express</p>
-        </div> */}
       </div>
     </section>
   );

@@ -1,16 +1,38 @@
 .contact {
-  padding: 10rem 1rem 12rem 1rem;
+  padding: 12rem 1rem 12rem 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .contact {
+    padding: 15rem 1rem 12rem 1rem;
+  }
+}
+
 .contact > h1 {
   font-size: 6rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .contact > h1 {
+    font-size: 8.5rem;
+    margin-bottom: 15rem;
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .contact > h1 {
+    font-size: 5rem;
+  }
 }
 
 .message {
@@ -19,9 +41,38 @@
   margin-bottom: 3.5rem;
 }
 
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .message {
+    font-size: 5rem;
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .message {
+    font-size: 2.7rem;
+  }
+}
+
 .email {
   font-size: 2rem;
   margin-bottom: 5rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .email {
+    font-size: 3.5rem;
+    margin-bottom: 10rem;
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .email {
+    font-size: 1.8rem;
+  }
 }
 
 .sns {
@@ -33,10 +84,31 @@
   margin-bottom: 30rem;
 }
 
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .sns {
+    width: 50%;
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .sns {
+    width: 70%;
+  }
+}
+
 .icon {
   font-size: 3.5rem;
   fill: rgb(24, 24, 24);
   transition: all 0.3s;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .icon {
+    font-size: 5rem;
+  }
 }
 
 .github:hover {

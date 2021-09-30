@@ -20,6 +20,13 @@
   cursor: pointer;
 }
 
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .logo {
+    font-size: 4rem;
+  }
+}
+
 .nav-links {
   list-style: none;
 

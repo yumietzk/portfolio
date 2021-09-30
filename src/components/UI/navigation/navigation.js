@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import MobileNav from './mobileNav';
+import MobileNav from '../mobile/mobileNav';
 import * as styles from './navigation.module.css';
 
 const Navigation = () => {
