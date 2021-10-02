@@ -30,6 +30,14 @@ const About = () => {
       <h2>Skills & Tools</h2>
       <div className={styles.skills} data-aos="fade-up">
         <div className={styles.skill}>
+          <FaIcons.FaReact className={styles.icon} />
+          <p>React</p>
+        </div>
+        <div className={styles.skill}>
+          <SiIcons.SiRedux className={styles.icon} />
+          <p>Redux</p>
+        </div>
+        <div className={styles.skill}>
           <FaIcons.FaHtml5 className={styles.icon} />
           <p>HTML</p>
         </div>
@@ -44,14 +52,6 @@ const About = () => {
         <div className={styles.skill}>
           <DiIcons.DiJavascript1 className={styles.icon} />
           <p>JavaScript</p>
-        </div>
-        <div className={styles.skill}>
-          <FaIcons.FaReact className={styles.icon} />
-          <p>React</p>
-        </div>
-        <div className={styles.skill}>
-          <SiIcons.SiRedux className={styles.icon} />
-          <p>Redux</p>
         </div>
         <div className={styles.skill}>
           <FaIcons.FaNodeJs className={styles.icon} />

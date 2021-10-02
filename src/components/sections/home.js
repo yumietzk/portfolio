@@ -25,7 +25,7 @@ const Home = () => {
             onInit={(typewriter) => {
               typewriter
                 .pauseFor(1900)
-                .typeString('A front-end developer based in Toronto.')
+                .typeString('A self-taught front-end developer.')
                 .pauseFor(2000)
                 .deleteAll()
                 .typeString('A sushi lover from Japan.')
