@@ -24,5 +24,11 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-transformer-sharp',
     'gatsby-plugin-smoothscroll',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/logoicon.png',
+      },
+    },
   ],
 };

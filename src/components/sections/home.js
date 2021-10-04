@@ -28,7 +28,7 @@ const Home = () => {
                 .typeString('A self-taught front-end developer.')
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString('A sushi lover from Japan.')
+                .typeString('A sushi lover.')
                 .pauseFor(2000)
                 .deleteAll()
                 .typeString('A passionate soccer fan.')
