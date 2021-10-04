@@ -33,13 +33,36 @@
   }
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14rem;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .about-me {
+    margin-bottom: 17rem;
+  }
+}
+
+/* 400px */
+@media only screen and (max-width: 25em) {
+  .about-me {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+  }
+}
+
 .about-me > p {
   font-size: 1.8rem;
   width: 75%;
   margin: 0 auto;
   text-align: center;
   line-height: 2;
-  margin-bottom: 14rem;
+  margin-bottom: 8rem;
 }
 
 /* 1800px */
@@ -47,16 +70,39 @@
   .about-me > p {
     font-size: 3rem;
     line-height: 3;
-    margin-bottom: 17rem;
   }
 }
 
 /* 400px */
 @media only screen and (max-width: 25em) {
   .about-me > p {
-    width: 85%;
     line-height: 2.3;
   }
+}
+
+.resume:link,
+.resume:visited {
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 0.8rem 1.3rem;
+  border-radius: 10rem;
+  transition: all 0.3s;
+}
+
+/* 1800px */
+@media only screen and (min-width: 112.5em) {
+  .resume:link,
+  .resume:visited {
+    font-size: 3.3rem;
+    padding: 1.5rem 2.3rem;
+  }
+}
+
+.resume:hover,
+.resume:active {
+  transform: scale(1.1);
 }
 
 .about > h2 {

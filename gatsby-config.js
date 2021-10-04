@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://yumietsuzuki.netlify.app/',
     title: 'Yumie.T | Front-end Developer',
     social: {
       email: 'yumie.tsuzuki@gmail.com',

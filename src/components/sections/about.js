@@ -17,6 +17,9 @@ const About = () => {
     query {
       mdx(slug: { eq: "aboutme" }) {
         body
+        frontmatter {
+          resume
+        }
       }
     }
   `);
@@ -26,6 +29,13 @@ const About = () => {
       <h1>About</h1>
       <div className={styles.aboutMe}>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
+        <a
+          className={styles.resume}
+          href={data.mdx.frontmatter.resume}
+          target="_blank"
+        >
+          Resume
+        </a>
       </div>
       <h2>Skills & Tools</h2>
       <div className={styles.skills} data-aos="fade-up">
