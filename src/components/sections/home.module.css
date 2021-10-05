@@ -75,6 +75,7 @@
 @media only screen and (max-width: 43.75em) {
   .header-text > h1 {
     font-size: 4rem;
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -118,7 +119,6 @@
 @media only screen and (max-width: 43.75em) {
   .header-img {
     margin-top: 5rem;
-    /* height: 60%; */
     width: 50%;
   }
 }
@@ -127,7 +127,6 @@
 @media only screen and (max-width: 31.25em) {
   .header-img {
     margin-top: 7rem;
-    /* height: 50%; */
     width: 70%;
   }
 }
