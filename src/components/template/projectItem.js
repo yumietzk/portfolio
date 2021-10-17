@@ -10,13 +10,6 @@ import * as styles from './projectItem.module.css';
 const ProjectItem = ({ data, item }) => {
   const [reverse, setReverse] = useState(false);
 
-  let width;
-  if (typeof window !== 'undefined') {
-    width = window.innerWidth;
-  }
-
-  const [windowWidth, setWindowWidth] = useState(width);
-
   useEffect(() => {
     if (item % 2 === 1) {
       setReverse(true);
@@ -26,15 +19,6 @@ const ProjectItem = ({ data, item }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', updateDimension);
-    return () => window.addEventListener('resize', updateDimension);
-  }, []);
-
-  const updateDimension = () => {
-    setWindowWidth(window.innerWidth);
-  };
 
   const image = getImage(data.frontmatter.image);
 
@@ -47,21 +31,12 @@ const ProjectItem = ({ data, item }) => {
         <div className={styles.cardItem}>
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
         </div>
-        {windowWidth > 400 ? (
-          <div className={styles.cardHidden}>
-            <MDXRenderer>{data.body}</MDXRenderer>
-            <a
-              className={styles.cardBtn}
-              href={data.frontmatter.source}
-              target="_blank"
-            >
-              More detail
-            </a>
-          </div>
-        ) : null}
       </div>
       <div className={styles.description}>
         <h3 className={styles.title}>{data.frontmatter.title}</h3>
+        <div className={styles.content}>
+          <MDXRenderer>{data.body}</MDXRenderer>
+        </div>
         <p className={styles.stack}>{data.frontmatter.stack}</p>
         <div className={styles.links}>
           <a
