@@ -73,10 +73,18 @@
   }
 }
 
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .about-me > p {
+    width: 90%;
+  }
+}
+
 /* 400px */
 @media only screen and (max-width: 25em) {
   .about-me > p {
     line-height: 2.3;
+    width: 99%;
   }
 }
 
