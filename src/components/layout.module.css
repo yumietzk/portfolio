@@ -6,8 +6,9 @@
   box-sizing: border-box;
   font-family: 'Vollkorn', sans-serif;
   font-weight: 400;
-  background-color: #ffb700;
-  color: #000;
+  /* background-color: #f6d2c6; */
+  /* background-color: #ffb700; */
+  /* color: #000; */
 }
 
 /* 1800px */
@@ -36,3 +37,18 @@
   display: flex;
   flex-direction: column;
 }
+
+/* COLORS */
+/* #F6D2C6 */
+/* #081217 */
+/* #ccc */
+/* #fff */
+/* #0e3f42 */
+
+/* sub? */
+/* #594E52 */
+/* #B1C8B1 */
+/* #C1ABA3 */
+/* #F8906C */
+/* #BD5A43 */
+/* #78887F */

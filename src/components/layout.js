@@ -1,21 +1,36 @@
 import React from 'react';
-import '@fontsource/vollkorn/400.css';
-import '@fontsource/vollkorn/400-italic.css';
-import '@fontsource/vollkorn/500.css';
-import '@fontsource/vollkorn/500-italic.css';
-import '@fontsource/vollkorn/600.css';
-import '@fontsource/vollkorn/600-italic.css';
-import '@fontsource/vollkorn/700.css';
-import '@fontsource/vollkorn/800.css';
+import '@fontsource/roboto';
 import Head from './head';
-import * as styles from './layout.module.css';
+import styled, { createGlobalStyle } from 'styled-components';
+// import * as styles from './layout.module.css';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+`;
+
+const Container = styled.div`
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+`;
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.container}>
+    // <div className={styles.container}>
+    <Container>
+      <GlobalStyle />
       <Head />
       {children}
-    </div>
+    </Container>
+    // </div>
   );
 };
 

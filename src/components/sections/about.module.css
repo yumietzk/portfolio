@@ -2,6 +2,8 @@
   padding: 15rem 1rem 12rem 1rem;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  color: #0e3f42;
 }
 
 /* 1800px */
