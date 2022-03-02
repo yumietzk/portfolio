@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 import Navigation from '../UI/navigation/navigation';
+import ImgSrc from '../../../assets/home-image.png';
 import styled from 'styled-components';
 // import * as styles from './home.module.css';
 
@@ -46,15 +47,14 @@ const Title = styled.h1`
 `;
 
 const Text = styled.div`
-  font-size: 4.5rem;
+  font-size: 5rem;
   word-spacing: 4px;
   margin-bottom: 3rem;
 `;
 
 const HeaderImage = styled.div`
   flex: 1;
-  // なぜか写真が表示されない
-  background-image: url(${(props) => props.img});
+  background-image: url(${ImgSrc});
   border-radius: 10rem;
   height: 70%;
   background-position: right;
@@ -113,12 +113,9 @@ const Home = () => {
             />
           </Text>
         </HeaderLeft>
-        <HeaderImage
-          img="../../../assets/home-image.png"
-          data-aos="flip-up"
-        ></HeaderImage>
+        <HeaderImage data-aos="flip-up"></HeaderImage>
       </HeaderMain>
-      <Button onClick={() => scrollTo('#about')}>
+      <Button onClick={() => scrollTo('#projects')}>
         <ButtonIcon />
         {/* <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} /> */}
       </Button>
