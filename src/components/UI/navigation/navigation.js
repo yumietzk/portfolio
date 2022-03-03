@@ -120,16 +120,15 @@ const Navigation = () => {
       ) : (
         <NavLinks>
           <NavItem>
-            <NavLinkProjects onClick={() => scrollTo('#projects')}>
-              Projects
-            </NavLinkProjects>
-          </NavItem>
-          <NavItem>
             <NavLinkAbout onClick={() => scrollTo('#about')}>
               About
             </NavLinkAbout>
           </NavItem>
-
+          <NavItem>
+            <NavLinkProjects onClick={() => scrollTo('#projects')}>
+              Projects
+            </NavLinkProjects>
+          </NavItem>
           <NavItem>
             <NavLinkContact onClick={() => scrollTo('#contact')}>
               Contact

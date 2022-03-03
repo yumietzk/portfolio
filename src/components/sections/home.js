@@ -115,7 +115,7 @@ const Home = () => {
         </HeaderLeft>
         <HeaderImage data-aos="flip-up"></HeaderImage>
       </HeaderMain>
-      <Button onClick={() => scrollTo('#projects')}>
+      <Button onClick={() => scrollTo('#about')}>
         <ButtonIcon />
         {/* <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} /> */}
       </Button>

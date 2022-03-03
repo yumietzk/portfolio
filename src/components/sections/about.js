@@ -20,7 +20,9 @@ import {
   SiHeroku,
   SiFirebase,
 } from 'react-icons/si';
-import styled, { css } from 'styled-components';
+import { MdArrowDropDown } from 'react-icons/md';
+import '@fontsource/playfair-display';
+import styled, { css, keyframes } from 'styled-components';
 // import * as styles from './about.module.css';
 
 const SectionWrapper = styled.section`
@@ -32,6 +34,7 @@ const SectionWrapper = styled.section`
 `;
 
 const Title = styled.div`
+  font-family: 'Playfair Display';
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
@@ -51,18 +54,66 @@ const AboutMeText = styled.p`
   margin: 0 auto;
   text-align: center;
   line-height: 2.5;
-  margin-bottom: 8rem;
+  margin-bottom: 0.5rem;
+`;
+
+const ArrowWrapper = styled.div`
+  height: 10rem;
+  margin-bottom: 3rem;
+  position: relative;
+`;
+
+const moveDown = keyframes`
+0%{
+  transform: translate(0);
+  font-size: 4rem;
+}
+
+50% {
+  transform: translateY(50%);
+  font-size: 6rem;
+}
+
+
+100% {
+  transform: translateY(100%);
+  font-size: 8rem;
+}
+`;
+
+const ArrowIcon = styled(MdArrowDropDown)`
+  color: #081217;
+  animation: ${moveDown} 3s linear infinite;
+`;
+
+const glowing = keyframes`
+0% {
+  background-color: #f39faa;
+  box-shadow: 0 0 .7rem #f39faa;
+}
+50% {
+  background-color: #ffbec7;
+  box-shadow: 0 0 2rem #ffbec7;
+}
+100% {
+  background-color: #f39faa;
+  box-shadow: 0 0 .7rem #f39faa;
+}
 `;
 
 const ResumeBtn = styled.a`
   &:link,
   &:visited {
-    background-color: #000;
+    background-color: #f39faa;
     color: #fff;
-    font-size: 2rem;
+    font-family: 'Playfair Display';
+    font-size: 2.3rem;
+    font-weight: 800;
+    display: inline-block;
     text-decoration: none;
-    padding: 0.8rem 1.3rem;
+    padding: 1.2rem 2rem;
     border-radius: 10rem;
+    animation: ${glowing} 1.5s infinite;
     transition: all 0.3s;
   }
 
@@ -73,6 +124,7 @@ const ResumeBtn = styled.a`
 `;
 
 const SubTitle = styled.h2`
+  font-family: 'Playfair Display';
   font-size: 4.2rem;
   font-weight: 500;
   text-align: center;
@@ -85,7 +137,7 @@ const SubTitle = styled.h2`
   &::after {
     content: '';
     display: block;
-    background-color: #f8906c;
+    background-color: #f39faa;
     position: absolute;
     bottom: 0.5rem;
     left: 50%;
@@ -136,59 +188,59 @@ const sharedIconStyle = css`
   margin-bottom: 0.8rem;
 `;
 
-const StyledReact = styled(FaReact)`
+const ReactIcon = styled(FaReact)`
   ${sharedIconStyle}
 `;
 
-const StyledHTML = styled(FaHtml5)`
+const HTMLIcon = styled(FaHtml5)`
   ${sharedIconStyle}
 `;
 
-const StyledCSS = styled(FaCss3Alt)`
+const CSSIcon = styled(FaCss3Alt)`
   ${sharedIconStyle}
 `;
 
-const StyledSass = styled(FaSass)`
+const SassIcon = styled(FaSass)`
   ${sharedIconStyle}
 `;
 
-const StyledNodeJS = styled(FaNodeJs)`
+const NodeJSIcon = styled(FaNodeJs)`
   ${sharedIconStyle}
 `;
 
-const StyledGithub = styled(FaGithub)`
+const GithubIcon = styled(FaGithub)`
   ${sharedIconStyle}
 `;
 
-const StyledJS = styled(DiJavascript1)`
+const JSIcon = styled(DiJavascript1)`
   ${sharedIconStyle}
 `;
 
-const StyledMongodb = styled(DiMongodb)`
+const MongodbIcon = styled(DiMongodb)`
   ${sharedIconStyle}
 `;
 
-const StyledRedux = styled(SiRedux)`
+const ReduxIcon = styled(SiRedux)`
   ${sharedIconStyle}
 `;
 
-const StyledGatsby = styled(SiGatsby)`
+const GatsbyIcon = styled(SiGatsby)`
   ${sharedIconStyle}
 `;
 
-const StyledGraphql = styled(SiGraphql)`
+const GraphqlIcon = styled(SiGraphql)`
   ${sharedIconStyle}
 `;
 
-const StyledNetlify = styled(SiNetlify)`
+const NetlifyIcon = styled(SiNetlify)`
   ${sharedIconStyle}
 `;
 
-const StyledHeroku = styled(SiHeroku)`
+const HerokuIcon = styled(SiHeroku)`
   ${sharedIconStyle}
 `;
 
-const StyledFirebase = styled(SiFirebase)`
+const FirebaseIcon = styled(SiFirebase)`
   ${sharedIconStyle}
 `;
 
@@ -219,6 +271,9 @@ const About = () => {
         <AboutMeText>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </AboutMeText>
+        <ArrowWrapper>
+          <ArrowIcon />
+        </ArrowWrapper>
         <ResumeBtn href={data.mdx.frontmatter.resume} target="_blank">
           Resume
         </ResumeBtn>
@@ -226,59 +281,59 @@ const About = () => {
       <SubTitle>Skills & Tools</SubTitle>
       <Skills data-aos="fade-up">
         <Skill>
-          <StyledReact />
+          <ReactIcon />
           <SkillName>React</SkillName>
         </Skill>
         <Skill>
-          <StyledRedux />
+          <ReduxIcon />
           <SkillName>Redux</SkillName>
         </Skill>
         <Skill>
-          <StyledHTML />
+          <HTMLIcon />
           <SkillName>HTML</SkillName>
         </Skill>
         <Skill>
-          <StyledCSS />
+          <CSSIcon />
           <SkillName>CSS</SkillName>
         </Skill>
         <Skill>
-          <StyledSass />
+          <SassIcon />
           <SkillName>Sass</SkillName>
         </Skill>
         <Skill>
-          <StyledJS />
+          <JSIcon />
           <SkillName>JavaScript</SkillName>
         </Skill>
         <Skill>
-          <StyledNodeJS />
+          <NodeJSIcon />
           <SkillName>Node.js</SkillName>
         </Skill>
         <Skill>
-          <StyledMongodb />
+          <MongodbIcon />
           <SkillName>Mongo DB</SkillName>
         </Skill>
         <Skill>
-          <StyledGatsby />
+          <GatsbyIcon />
           <SkillName>Gatsby</SkillName>
         </Skill>
         <Skill>
-          <StyledGraphql />
+          <GraphqlIcon />
           <SkillName>GraphQL</SkillName>
         </Skill>
         <Skill>
-          <StyledGithub />
+          <GithubIcon />
           <SkillName>Github</SkillName>
         </Skill>
         <Skill>
-          <StyledNetlify />
+          <NetlifyIcon />
           <SkillName>Netlify</SkillName>
         </Skill>
         <Skill>
-          <StyledHeroku />
+          <HerokuIcon />
           <SkillName>Heroku</SkillName>
         </Skill>
         <Skill>
-          <StyledFirebase />
+          <FirebaseIcon />
           <SkillName>Firebase</SkillName>
         </Skill>
       </Skills>

@@ -5,6 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { BsLink45Deg } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import '@fontsource/playfair-display';
 import styled, { css } from 'styled-components';
 // import * as styles from './projectItem.module.css';
 
@@ -46,8 +47,10 @@ const Description = styled.div`
 `;
 
 const Title = styled.div`
+  font-family: 'Playfair Display';
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
+  font-style: italic;
   color: #081217;
   margin-bottom: 4rem;
   z-index: 5;

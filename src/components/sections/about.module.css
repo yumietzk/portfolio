@@ -230,5 +230,11 @@
 @media only screen and (max-width: 25em) {
   .skill > p {
     font-size: 1.3rem;
+    color: #df8975;
+    color: #bd5a43;
+    color: #b43e24;
+    color: #fdb7c0;
+    color: #ffc5d8;
+    color: #2ba805;
   }
 }
