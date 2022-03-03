@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -9,7 +10,7 @@ import styled, { css } from 'styled-components';
 // import * as styles from './contact.module.css';
 
 const SectionWrapper = styled.div`
-  padding: 10rem 1rem;
+  padding: 7rem 1rem 2rem 1rem;
   background-color: #f6d2c6;
   color: #081217;
 
@@ -26,9 +27,18 @@ const Title = styled.div`
   margin-bottom: 5rem;
 `;
 
-const Text = styled.p`
+const Text = styled.div`
   font-size: 2rem;
   margin-bottom: 2.5rem;
+  position: relative;
+`;
+
+const ContactLogo = styled.div`
+  position: absolute;
+  right: -10rem;
+  top: -5rem;
+  height: 8.5rem;
+  width: 8.5rem;
 `;
 
 const Email = styled.a`
@@ -42,7 +52,7 @@ const SNSWrapper = styled.div`
   justify-content: space-between;
 
   width: 20%;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 `;
 
 const sharedIconStyle = css`
@@ -95,7 +105,12 @@ const Contact = () => {
   return (
     <SectionWrapper id="contact">
       <Title>Contact</Title>
-      <Text>Please reach me at: </Text>
+      <Text>
+        Please reach me at:
+        <ContactLogo>
+          <StaticImage src="../../images/contact.svg" alt="Contact logo" />
+        </ContactLogo>
+      </Text>
       {/* <Email href={`mailto:${data.site.siteMetadata.social.email}`}>
         {data.site.siteMetadata.social.email}
       </Email> */}
