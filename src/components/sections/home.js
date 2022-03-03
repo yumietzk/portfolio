@@ -3,10 +3,10 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import Typewriter from 'typewriter-effect';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { IoIosArrowDropdownCircle } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 import Navigation from '../UI/navigation/navigation';
 import ImgSrc from '../../../assets/home-image.png';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 // import * as styles from './home.module.css';
 
 const Header = styled.header`
@@ -71,13 +71,20 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const ButtonIcon = styled(IoIosArrowDropdownCircle)`
-  font-size: 3rem;
-  transition: all 0.3s;
+const glowing = keyframes`
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.5);
+}
+100% {
+  transform: scale(1);
+`;
 
-  ${Button}:hover & {
-    transform: scale(1.1);
-  }
+const ButtonIcon = styled(IoIosArrowDown)`
+  font-size: 4rem;
+  animation: ${glowing} 2s infinite;
 `;
 
 const Home = () => {
@@ -117,7 +124,6 @@ const Home = () => {
       </HeaderMain>
       <Button onClick={() => scrollTo('#about')}>
         <ButtonIcon />
-        {/* <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} /> */}
       </Button>
     </Header>
     // <header className={styles.header} id="top">
