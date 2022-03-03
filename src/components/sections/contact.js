@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+import '@fontsource/playfair-display';
 import styled, { css } from 'styled-components';
 // import * as styles from './contact.module.css';
 
 const SectionWrapper = styled.div`
-  padding: 12rem 1rem 12rem 1rem;
+  padding: 10rem 1rem;
   background-color: #f6d2c6;
   color: #081217;
 
@@ -17,16 +19,16 @@ const SectionWrapper = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 6rem;
+  font-family: 'Playfair Display';
+  font-size: 4.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 `;
 
 const Text = styled.p`
-  font-size: 3rem;
-  font-style: italic;
-  margin-bottom: 3.5rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
 `;
 
 const Email = styled.a`
@@ -39,41 +41,30 @@ const SNSWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 30%;
-  margin-bottom: 30rem;
+  width: 20%;
+  margin-bottom: 8rem;
 `;
 
 const sharedIconStyle = css`
-  font-size: 3.5rem;
+  font-size: 3rem;
   fill: rgb(24, 24, 24);
   transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.03);
+  }
 `;
 
 const GithubIcon = styled(FaGithub)`
   ${sharedIconStyle}
-
-  &:hover {
-    fill: #000;
-    transform: scale(1.03);
-  }
 `;
 
 const LinkedInIcon = styled(FaLinkedin)`
   ${sharedIconStyle}
-
-  &:hover {
-    fill: #007bb5;
-    transform: scale(1.03);
-  }
 `;
 
-const InstagramIcon = styled(FaInstagram)`
+const EmailIcon = styled(AiOutlineMail)`
   ${sharedIconStyle}
-
-  &:hover {
-    fill: #e95950;
-    transform: scale(1.03);
-  }
 `;
 
 const Copyright = styled.p`
@@ -105,9 +96,9 @@ const Contact = () => {
     <SectionWrapper id="contact">
       <Title>Contact</Title>
       <Text>Please reach me at: </Text>
-      <Email href={`mailto:${data.site.siteMetadata.social.email}`}>
+      {/* <Email href={`mailto:${data.site.siteMetadata.social.email}`}>
         {data.site.siteMetadata.social.email}
-      </Email>
+      </Email> */}
       <SNSWrapper data-aos="slide-up">
         <a
           href={`https://github.com/${data.site.siteMetadata.social.github}`}
@@ -121,14 +112,17 @@ const Contact = () => {
         >
           <LinkedInIcon />
         </a>
-        <a
+        <a href={`mailto:${data.site.siteMetadata.social.email}`}>
+          <EmailIcon />
+        </a>
+        {/* <a
           href={`https://www.instagram.com/${data.site.siteMetadata.social.instagram}`}
           target="_blank"
         >
           <InstagramIcon />
-        </a>
+        </a> */}
       </SNSWrapper>
-      <Copyright>Copyright &copy; 2021, Yumie Tsuzuki</Copyright>
+      <Copyright>Copyright &copy; 2022, Yumie Tsuzuki</Copyright>
     </SectionWrapper>
   );
 };
