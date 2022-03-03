@@ -89,15 +89,15 @@ const ArrowIcon = styled(MdArrowDropDown)`
 const glowing = keyframes`
 0% {
   background-color: #f39faa;
-  box-shadow: 0 0 .7rem #f39faa;
+  box-shadow: 0 0 .9rem #f39faa;
 }
 50% {
   background-color: #ffbec7;
-  box-shadow: 0 0 2rem #ffbec7;
+  box-shadow: 0 0 3rem #ffbec7;
 }
 100% {
   background-color: #f39faa;
-  box-shadow: 0 0 .7rem #f39faa;
+  box-shadow: 0 0 .9rem #f39faa;
 }
 `;
 
@@ -111,7 +111,7 @@ const ResumeBtn = styled.a`
     font-weight: 800;
     display: inline-block;
     text-decoration: none;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 2.1rem;
     border-radius: 10rem;
     animation: ${glowing} 1.5s infinite;
     transition: all 0.3s;
