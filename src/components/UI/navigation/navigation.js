@@ -14,6 +14,7 @@ const NavWrapper = styled.nav`
   left: 0;
   z-index: 100;
   padding: 0 3rem;
+  background-color: #f6d2c6ec;
 
   display: flex;
   align-items: center;
