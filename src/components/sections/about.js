@@ -26,7 +26,7 @@ import styled, { css, keyframes } from 'styled-components';
 // import * as styles from './about.module.css';
 
 const SectionWrapper = styled.section`
-  padding: 15rem 1rem 12rem 1rem;
+  padding: 15rem 1rem;
   display: flex;
   flex-direction: column;
   background-color: #fff;

@@ -11,11 +11,10 @@ import styled, { css } from 'styled-components';
 
 const Project = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: ${(props) => (props.reverse ? 'row-reverse' : 'row')};
 
-  width: 95%;
+  width: 85%;
 
   &:not(:last-child) {
     margin-bottom: 12rem;
@@ -31,15 +30,14 @@ const Card = styled.div`
   height: 100%;
   width: 100%;
   object-fit: contain;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   overflow: hidden;
-  transition: all 0.5s;
 `;
 
 const Description = styled.div`
   flex: 1;
-  padding: 0 4rem;
+  padding: ${(props) => (props.reverse ? '0 4rem 0 .5rem' : '0 .5rem 0 4rem')};
 
   display: flex;
   flex-direction: column;
@@ -66,20 +64,21 @@ const Title = styled.div`
     width: 100%;
     z-index: -1;
     transform: scale(1.07, 1.05) skewX(-15deg);
-    background-color: #f8906c;
+    background-color: #f39faa;
   }
 `;
 
 const Content = styled.p`
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 2.3rem;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
 `;
 
 const Stack = styled.p`
   width: 80%;
-  font-size: 1.6rem;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
   font-style: italic;
@@ -108,7 +107,8 @@ const sharedLinkStyle = css`
 
   &:hover,
   &:active {
-    background-color: #ccc;
+    background-color: #f39faa;
+    border: 2px solid #f39faa;
     color: #081217;
   }
 `;
@@ -169,7 +169,7 @@ const ProjectItem = ({ data, item }) => {
           <GatsbyImage image={image} alt={data.frontmatter.image_alt} />
         </Card>
       </CardWrapper>
-      <Description>
+      <Description reverse={reverse}>
         <Title>{data.frontmatter.title}</Title>
         <Content>
           <MDXRenderer>{data.body}</MDXRenderer>
@@ -182,8 +182,7 @@ const ProjectItem = ({ data, item }) => {
           </VisitLink>
           <SourceLink href={data.frontmatter.source} target="_blank">
             <SourceIcon />
-            {/* more detailとかにしたい */}
-            Source
+            More detail
           </SourceLink>
         </LinkWrapper>
       </Description>

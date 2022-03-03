@@ -1,11 +1,12 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import ProjectItem from '../template/projectItem';
+import '@fontsource/playfair-display';
 import styled from 'styled-components';
 // import * as styles from './projects.module.css';
 
 const SectionWrapper = styled.section`
-  padding: 12rem 1rem 12rem 1rem;
+  padding: 15rem 1rem;
   display: flex;
   flex-direction: column;
   background-color: #081217;
@@ -13,6 +14,7 @@ const SectionWrapper = styled.section`
 `;
 
 const Title = styled.div`
+  font-family: 'Playfair Display';
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
