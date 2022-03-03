@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { StaticImage } from 'gatsby-plugin-image';
 import MobileNav from '../mobile/mobileNav';
+import '@fontsource/playfair-display';
 import styled, { css } from 'styled-components';
 // import * as styles from './navigation.module.css';
 
@@ -19,10 +21,10 @@ const NavWrapper = styled.nav`
 `;
 
 const NavLogo = styled.button`
-  font-size: 4.5rem;
-  font-weight: 700;
   border: none;
   background: none;
+  height: 8rem;
+  width: 8rem;
   cursor: pointer;
 `;
 
@@ -40,7 +42,9 @@ const NavItem = styled.li`
 `;
 
 const sharedLinkStyle = css`
+  font-family: 'Playfair Display';
   font-size: 2rem;
+  font-weight: 500;
   text-transform: uppercase;
   border: none;
   background: none;
@@ -114,7 +118,9 @@ const Navigation = () => {
 
   return (
     <NavWrapper>
-      <NavLogo onClick={() => scrollTo('#top')}>YUMIE.T</NavLogo>
+      <NavLogo onClick={() => scrollTo('#top')}>
+        <StaticImage src="../../../images/logo.svg" alt="logo" />
+      </NavLogo>
       {windowWidth < 450 ? (
         <MobileNav />
       ) : (

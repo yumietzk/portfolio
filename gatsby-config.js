@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://yumietsuzuki.netlify.app/',
-    title: 'Yumie.T | Front-end Developer',
+    title: 'Y.T | Front-end Developer',
     social: {
       email: 'yumie.tsuzuki@gmail.com',
       github: 'yumietzk',
@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/logoicon.png',
+        icon: 'src/images/logo.svg',
       },
     },
   ],
