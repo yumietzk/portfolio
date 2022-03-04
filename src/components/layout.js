@@ -2,7 +2,6 @@ import React from 'react';
 import '@fontsource/roboto';
 import Head from './head';
 import styled, { createGlobalStyle } from 'styled-components';
-// import * as styles from './layout.module.css';
 
 const GlobalStyle = createGlobalStyle`
   * {

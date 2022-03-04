@@ -7,7 +7,6 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import '@fontsource/playfair-display';
 import styled, { css } from 'styled-components';
-// import * as styles from './contact.module.css';
 
 const SectionWrapper = styled.div`
   padding: 10rem 1rem 2rem 1rem;

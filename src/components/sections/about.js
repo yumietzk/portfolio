@@ -23,7 +23,6 @@ import {
 import { MdArrowDropDown } from 'react-icons/md';
 import '@fontsource/playfair-display';
 import styled, { css, keyframes } from 'styled-components';
-// import * as styles from './about.module.css';
 
 const SectionWrapper = styled.section`
   padding: 15rem 1rem;
@@ -527,79 +526,6 @@ const About = () => {
         </Skill>
       </Skills>
     </SectionWrapper>
-
-    // <section className={styles.about} id="about">
-    //   <h1>About</h1>
-    //   <div className={styles.aboutMe}>
-    //     <MDXRenderer>{data.mdx.body}</MDXRenderer>
-    //     <a
-    //       className={styles.resume}
-    //       href={data.mdx.frontmatter.resume}
-    //       target="_blank"
-    //     >
-    //       Resume
-    //     </a>
-    //   </div>
-    //   <h2>Skills & Tools</h2>
-    //   <div className={styles.skills} data-aos="fade-up">
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaReact className={styles.icon} />
-    //       <p>React</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiRedux className={styles.icon} />
-    //       <p>Redux</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaHtml5 className={styles.icon} />
-    //       <p>HTML</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaCss3Alt className={styles.icon} />
-    //       <p>CSS</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaSass className={styles.icon} />
-    //       <p>Sass</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <DiIcons.DiJavascript1 className={styles.icon} />
-    //       <p>JavaScript</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaNodeJs className={styles.icon} />
-    //       <p>Node.js</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <DiIcons.DiMongodb className={styles.icon} />
-    //       <p>Mongo DB</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiGatsby className={styles.icon} />
-    //       <p>Gatsby</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiGraphql className={styles.icon} />
-    //       <p>GraphQL</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <FaIcons.FaGithub className={styles.icon} />
-    //       <p>Github</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiNetlify className={styles.icon} />
-    //       <p>Netlify</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiHeroku className={styles.icon} />
-    //       <p>Heroku</p>
-    //     </div>
-    //     <div className={styles.skill}>
-    //       <SiIcons.SiFirebase className={styles.icon} />
-    //       <p>Firebase</p>
-    //     </div>
-    //   </div>
-    // </section>
   );
 };
 

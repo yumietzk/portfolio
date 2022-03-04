@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import MobileNav from '../mobile/mobileNav';
 import '@fontsource/playfair-display';
 import styled, { css } from 'styled-components';
-// import * as styles from './navigation.module.css';
 
 const NavWrapper = styled.nav`
   height: 10rem;
@@ -245,41 +244,6 @@ const Navigation = () => {
         </NavLinks>
       )}
     </NavWrapper>
-    // <nav className={styles.nav}>
-    //   <button className={styles.logo} onClick={() => scrollTo('#top')}>
-    //     YUMIE.T
-    //   </button>
-    //   {windowWidth < 450 ? (
-    //     <MobileNav />
-    //   ) : (
-    //     <ul className={styles.navLinks}>
-    //       <li className={styles.navItem}>
-    //         <button
-    //           className={styles.navLink}
-    //           onClick={() => scrollTo('#about')}
-    //         >
-    //           About
-    //         </button>
-    //       </li>
-    //       <li className={styles.navItem}>
-    //         <button
-    //           className={styles.navLink}
-    //           onClick={() => scrollTo('#projects')}
-    //         >
-    //           Projects
-    //         </button>
-    //       </li>
-    //       <li className={styles.navItem}>
-    //         <button
-    //           className={styles.navLink}
-    //           onClick={() => scrollTo('#contact')}
-    //         >
-    //           Contact
-    //         </button>
-    //       </li>
-    //     </ul>
-    //   )}
-    // </nav>
   );
 };
 

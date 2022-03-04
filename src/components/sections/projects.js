@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import ProjectItem from '../template/projectItem';
 import '@fontsource/playfair-display';
 import styled from 'styled-components';
-// import * as styles from './projects.module.css';
 
 const SectionWrapper = styled.section`
   padding: 15rem 1rem;
@@ -102,14 +101,6 @@ const Projects = () => {
         ))}
       </ProjectsWrapper>
     </SectionWrapper>
-    // <div className={styles.projects} id="projects">
-    //   <h1>Projects</h1>
-    //   <div className={styles.items}>
-    //     {data.allFile.edges.map((edge, i) => (
-    //       <ProjectItem key={edge.node.id} data={edge.node.childMdx} item={i} />
-    //     ))}
-    //   </div>
-    // </div>
   );
 };
 

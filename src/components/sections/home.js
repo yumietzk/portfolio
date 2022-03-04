@@ -7,7 +7,6 @@ import { IoIosArrowDown } from 'react-icons/io';
 import Navigation from '../UI/navigation/navigation';
 import ImgSrc from '../../../assets/home-image.png';
 import styled, { keyframes } from 'styled-components';
-// import * as styles from './home.module.css';
 
 const Header = styled.header`
   height: 100vh;
@@ -273,37 +272,6 @@ const Home = () => {
         <ButtonIcon />
       </Button>
     </Header>
-    // <header className={styles.header} id="top">
-    //   <Navigation />
-    //   <div className={styles.headerTitle}>
-    //     <div className={styles.headerText} data-aos="zoom-in">
-    //       <h1>Hi, I'm Yumie 👋🏻</h1>
-    //       <Typewriter
-    //         options={{
-    //           loop: true,
-    //         }}
-    //         onInit={(typewriter) => {
-    //           typewriter
-    //             .pauseFor(1900)
-    //             .typeString('A self-taught front-end developer.')
-    //             .pauseFor(2000)
-    //             .deleteAll()
-    //             .typeString('A sushi lover.')
-    //             .pauseFor(2000)
-    //             .deleteAll()
-    //             .typeString('A passionate soccer fan.')
-    //             .pauseFor(2000)
-    //             .deleteAll()
-    //             .start();
-    //         }}
-    //       />
-    //     </div>
-    //     <div className={styles.headerImg} data-aos="flip-up"></div>
-    //   </div>
-    //   <button className={styles.btn} onClick={() => scrollTo('#about')}>
-    //     <IoIcons.IoIosArrowDropdownCircle className={styles.btnIcon} />
-    //   </button>
-    // </header>
   );
 };
 

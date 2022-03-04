@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import '@fontsource/playfair-display';
 import styled from 'styled-components';
-// import * as styles from './mobileNav.module.css';
 
 const NavBtn = styled.button`
   border: none;
@@ -75,7 +75,8 @@ const LinkBtn = styled.a`
   color: #fff;
   border: none;
   background: none;
-  font-size: 1.7rem;
+  font-family: 'Playfair Display';
+  font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s;
 
