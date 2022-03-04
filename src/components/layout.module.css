@@ -11,24 +11,17 @@
   /* color: #000; */
 }
 
-/* 1800px */
-@media only screen and (min-width: 112.5em) {
-  * {
-    font-size: 75%;
+/* 800px */
+@media only screen and (max-width: 50rem) {
+  html {
+    font-size: 55%;
   }
 }
 
-/* 1200px */
-@media only screen and (max-width: 75em) {
-  * {
-    font-size: 56.25%;
-  }
-}
-
-/* 900px */
-@media only screen and (max-width: 56.25em) {
-  * {
-    font-size: 43.75%;
+/* 450px */
+@media only screen and (max-width: 28.125em) {
+  html {
+    font-size: 50%;
   }
 }
 
@@ -53,3 +46,9 @@
 /* #F8906C */
 /* #BD5A43 */
 /* #78887F */
+
+/* 1800px 112.5em */
+/* 1200px 75em */
+/* 800px 50em 文字サイズ切り替え */
+/* 600px 37.5em */
+/* 450px 28.125em 文字サイズ切り替え */

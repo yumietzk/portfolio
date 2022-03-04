@@ -13,6 +13,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+
+    // 800px
+    @media(max-width: 50rem) {
+      font-size: 55%;
+    }
+
+    // 450px
+    @media(max-width: 28.125rem) {
+      font-size: 50%;
+    }
 }
 `;
 
@@ -24,13 +34,11 @@ const Container = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    // <div className={styles.container}>
     <Container>
       <GlobalStyle />
       <Head />
       {children}
     </Container>
-    // </div>
   );
 };
 

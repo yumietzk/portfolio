@@ -10,13 +10,23 @@ import styled, { css } from 'styled-components';
 // import * as styles from './contact.module.css';
 
 const SectionWrapper = styled.div`
-  padding: 7rem 1rem 2rem 1rem;
+  padding: 10rem 1rem 2rem 1rem;
   background-color: #f6d2c6;
   color: #081217;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  // 800px
+  @media (max-width: 50rem) {
+    padding: 7rem 1rem 2rem 1rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    padding: 5rem 1rem 2rem 1rem;
+  }
 `;
 
 const Title = styled.div`
@@ -25,12 +35,45 @@ const Title = styled.div`
   font-weight: 700;
   text-align: center;
   margin-bottom: 5rem;
+
+  // 1200px
+  @media (max-width: 75rem) {
+    font-size: 4rem;
+  }
+
+  // 800px
+  @media (max-width: 50rem) {
+    font-size: 3.7rem;
+  }
+
+  // 600px
+  @media (max-width: 37.5rem) {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 const Text = styled.div`
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin-bottom: 2.5rem;
   position: relative;
+
+  // 1800px
+  @media (min-width: 112.5rem) {
+    font-size: 2.5rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 const ContactLogo = styled.div`
@@ -39,11 +82,13 @@ const ContactLogo = styled.div`
   top: -5rem;
   height: 8.5rem;
   width: 8.5rem;
-`;
 
-const Email = styled.a`
-  font-size: 2rem;
-  margin-bottom: 5rem;
+  // 450px
+  @media (max-width: 28.125rem) {
+    right: -8rem;
+    height: 7.5rem;
+    width: 7.5rem;
+  }
 `;
 
 const SNSWrapper = styled.div`
@@ -51,14 +96,30 @@ const SNSWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 20%;
-  margin-bottom: 10rem;
+  width: 23rem;
+  margin-bottom: 15rem;
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    width: 14rem;
+    margin-bottom: 7rem;
+  }
 `;
 
 const sharedIconStyle = css`
-  font-size: 3rem;
+  font-size: 3.1rem;
   fill: rgb(24, 24, 24);
   transition: all 0.3s;
+
+  // 1800px
+  @media (min-width: 112.5rem) {
+    font-size: 3.5rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    font-size: 2.6rem;
+  }
 
   &:hover {
     transform: translateY(-2px) scale(1.03);
@@ -79,6 +140,11 @@ const EmailIcon = styled(AiOutlineMail)`
 
 const Copyright = styled.p`
   font-size: 1.5rem;
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    font-size: 1.3rem;
+  }
 `;
 
 const Contact = () => {
@@ -111,9 +177,6 @@ const Contact = () => {
           <StaticImage src="../../images/contact.svg" alt="Contact logo" />
         </ContactLogo>
       </Text>
-      {/* <Email href={`mailto:${data.site.siteMetadata.social.email}`}>
-        {data.site.siteMetadata.social.email}
-      </Email> */}
       <SNSWrapper data-aos="slide-up">
         <a
           href={`https://github.com/${data.site.siteMetadata.social.github}`}
@@ -130,12 +193,6 @@ const Contact = () => {
         <a href={`mailto:${data.site.siteMetadata.social.email}`}>
           <EmailIcon />
         </a>
-        {/* <a
-          href={`https://www.instagram.com/${data.site.siteMetadata.social.instagram}`}
-          target="_blank"
-        >
-          <InstagramIcon />
-        </a> */}
       </SNSWrapper>
       <Copyright>Copyright &copy; 2022, Yumie Tsuzuki</Copyright>
     </SectionWrapper>

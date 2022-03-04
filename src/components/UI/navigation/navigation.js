@@ -19,6 +19,26 @@ const NavWrapper = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  // 1800px
+  @media (min-width: 112.5rem) {
+    height: 11rem;
+  }
+
+  // 800px
+  @media (max-width: 50rem) {
+    height: 9rem;
+  }
+
+  // 600px
+  @media (max-width: 37.5rem) {
+    height: 8rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    height: 6rem;
+  }
 `;
 
 const NavLogo = styled.button`
@@ -27,6 +47,30 @@ const NavLogo = styled.button`
   height: 8rem;
   width: 8rem;
   cursor: pointer;
+
+  // 1800px
+  @media (min-width: 112.5rem) {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  // 800px
+  @media (max-width: 50rem) {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  // 600px
+  @media (max-width: 37.5rem) {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  // 450px
+  @media (max-width: 28.125rem) {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -39,6 +83,13 @@ const NavLinks = styled.ul`
 const NavItem = styled.li`
   &:not(:last-child) {
     margin-right: 4rem;
+  }
+
+  // 600px
+  @media (max-width: 37.5rem) {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 `;
 
@@ -54,6 +105,16 @@ const sharedLinkStyle = css`
   position: relative;
   z-index: 1;
 
+  // 1800px
+  @media (min-width: 112.5rem) {
+    font-size: 2.5rem;
+  }
+
+  // 600px
+  @media (max-width: 37.5rem) {
+    font-size: 1.7rem;
+  }
+
   &::after {
     content: '';
     display: none;
@@ -65,7 +126,17 @@ const sharedLinkStyle = css`
     border-radius: 500rem;
     transform: skew(15deg, 10deg);
     z-index: -1;
-    transition: all 0.4s;
+    transition: display 0.4s;
+
+    // 1800px
+    @media (min-width: 112.5rem) {
+      height: 4rem;
+    }
+
+    // 600px
+    @media (max-width: 37.5rem) {
+      height: 2.5rem;
+    }
   }
 
   &:hover {
@@ -80,6 +151,16 @@ const NavLinkAbout = styled.button`
 
   &::after {
     width: 7rem;
+
+    // 1800px
+    @media (min-width: 112.5rem) {
+      width: 8rem;
+    }
+
+    // 600px
+    @media (max-width: 37.5rem) {
+      width: 6rem;
+    }
   }
 `;
 
@@ -88,6 +169,16 @@ const NavLinkProjects = styled.button`
 
   &::after {
     width: 10rem;
+
+    // 1800px
+    @media (min-width: 112.5rem) {
+      width: 12rem;
+    }
+
+    // 600px
+    @media (max-width: 37.5rem) {
+      width: 8.3rem;
+    }
   }
 `;
 
@@ -97,6 +188,16 @@ const NavLinkContact = styled.button`
 
   &::after {
     width: 9rem;
+
+    // 1800px
+    @media (min-width: 112.5rem) {
+      width: 11.5rem;
+    }
+
+    // 600px
+    @media (max-width: 37.5rem) {
+      width: 8rem;
+    }
   }
 `;
 
@@ -122,7 +223,7 @@ const Navigation = () => {
       <NavLogo onClick={() => scrollTo('#top')}>
         <StaticImage src="../../../images/logo.svg" alt="logo" />
       </NavLogo>
-      {windowWidth < 450 ? (
+      {windowWidth <= 450 ? (
         <MobileNav />
       ) : (
         <NavLinks>
