@@ -210,6 +210,7 @@ const glowing = keyframes`
 
 const ButtonIcon = styled(IoIosArrowDown)`
   font-size: 4rem;
+  color: inherit;
   animation: ${glowing} 2s infinite;
 
   // 1800px

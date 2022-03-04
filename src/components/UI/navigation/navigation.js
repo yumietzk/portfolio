@@ -95,6 +95,7 @@ const NavItem = styled.li`
 const sharedLinkStyle = css`
   font-family: 'Playfair Display';
   font-size: 2rem;
+  color: #081217;
   font-weight: 500;
   text-transform: uppercase;
   border: none;
