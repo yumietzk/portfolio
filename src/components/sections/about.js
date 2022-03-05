@@ -89,7 +89,7 @@ const AboutMe = styled.div`
   }
 `;
 
-const AboutMeText = styled.p`
+const AboutMeText = styled.div`
   font-size: 3rem;
   width: 75%;
   margin: 0 auto;

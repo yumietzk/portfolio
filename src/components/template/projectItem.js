@@ -137,7 +137,7 @@ const Title = styled.div`
   }
 `;
 
-const Content = styled.p`
+const Content = styled.div`
   font-size: 2.4rem;
   margin-bottom: 2.3rem;
   text-align: center;
@@ -170,7 +170,7 @@ const Content = styled.p`
   }
 `;
 
-const Stack = styled.p`
+const Stack = styled.div`
   width: 80%;
   font-family: 'Playfair Display';
   font-size: 1.5rem;
