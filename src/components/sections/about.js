@@ -16,6 +16,8 @@ import {
   SiRedux,
   SiGatsby,
   SiGraphql,
+  SiJest,
+  SiTestinglibrary,
   SiNetlify,
   SiHeroku,
   SiFirebase,
@@ -405,6 +407,14 @@ const GraphqlIcon = styled(SiGraphql)`
   ${sharedIconStyle}
 `;
 
+const JestIcon = styled(SiJest)`
+  ${sharedIconStyle}
+`;
+
+// const RTLIcon = styled(SiTestinglibrary)`
+//   ${sharedIconStyle}
+// `;
+
 const NetlifyIcon = styled(SiNetlify)`
   ${sharedIconStyle}
 `;
@@ -508,6 +518,14 @@ const About = () => {
           <GraphqlIcon />
           <SkillName>GraphQL</SkillName>
         </Skill>
+        <Skill>
+          <JestIcon />
+          <SkillName>Jest</SkillName>
+        </Skill>
+        {/* <Skill>
+          <RTLIcon />
+          <SkillName>React Testing Library</SkillName>
+        </Skill> */}
         <Skill>
           <GithubIcon />
           <SkillName>Github</SkillName>
