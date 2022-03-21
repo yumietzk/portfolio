@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    -webkit-text-size-adjust: 100%;
 
     // 800px
     @media(max-width: 50rem) {
