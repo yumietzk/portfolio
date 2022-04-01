@@ -18,12 +18,12 @@ const SectionWrapper = styled.div`
   align-items: center;
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     padding: 7rem 1rem 2rem 1rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     padding: 5rem 1rem 2rem 1rem;
   }
 `;
@@ -36,23 +36,23 @@ const Title = styled.div`
   margin-bottom: 5rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 4rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 3.7rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.5rem;
     margin-bottom: 4rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 3.2rem;
     margin-bottom: 3rem;
   }
@@ -64,12 +64,12 @@ const Text = styled.div`
   position: relative;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 2.5rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 1.9rem;
     margin-bottom: 2rem;
   }
@@ -83,7 +83,7 @@ const ContactLogo = styled.div`
   width: 8.5rem;
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     right: -8rem;
     height: 7.5rem;
     width: 7.5rem;
@@ -99,7 +99,7 @@ const SNSWrapper = styled.div`
   margin-bottom: 15rem;
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     width: 14rem;
     margin-bottom: 7rem;
   }
@@ -111,12 +111,12 @@ const sharedIconStyle = css`
   transition: all 0.3s;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 3.5rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 2.6rem;
   }
 
@@ -141,7 +141,7 @@ const Copyright = styled.p`
   font-size: 1.5rem;
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 1.3rem;
   }
 `;

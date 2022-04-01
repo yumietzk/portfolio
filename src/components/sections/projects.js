@@ -12,12 +12,12 @@ const SectionWrapper = styled.section`
   color: #ccc;
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     padding: 10rem 1rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     padding: 8rem 1rem;
   }
 `;
@@ -30,23 +30,23 @@ const Title = styled.div`
   margin-bottom: 10rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 4.5rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 4rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.7rem;
     margin-bottom: 4rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 3.5rem;
     margin-bottom: 3rem;
   }

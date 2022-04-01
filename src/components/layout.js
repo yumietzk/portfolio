@@ -15,12 +15,12 @@ const GlobalStyle = createGlobalStyle`
     -webkit-text-size-adjust: 100%;
 
     // 800px
-    @media only screen and (max-width: 50rem) {
+    @media only screen and (max-width: 50em) {
       font-size: 55%;
     }
 
     // 450px
-    @media only screen and (max-width: 28.125rem) {
+    @media only screen and (max-width: 28.125em) {
       font-size: 50%;
     }
 }

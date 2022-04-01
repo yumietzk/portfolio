@@ -20,22 +20,22 @@ const NavWrapper = styled.nav`
   justify-content: space-between;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     height: 11rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     height: 9rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     height: 8rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     height: 6rem;
   }
 `;
@@ -48,25 +48,25 @@ const NavLogo = styled.button`
   cursor: pointer;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     height: 9rem;
     width: 9rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     height: 7rem;
     width: 7rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     height: 6rem;
     width: 6rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     height: 4.5rem;
     width: 4.5rem;
   }
@@ -85,7 +85,7 @@ const NavItem = styled.li`
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     &:not(:last-child) {
       margin-right: 2rem;
     }
@@ -106,12 +106,12 @@ const sharedLinkStyle = css`
   z-index: 1;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 2.5rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 1.7rem;
   }
 
@@ -129,12 +129,12 @@ const sharedLinkStyle = css`
     transition: display 0.4s;
 
     // 1800px
-    @media only screen and (min-width: 112.5rem) {
+    @media only screen and (min-width: 112.5em) {
       height: 4rem;
     }
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       height: 2.5rem;
     }
   }
@@ -153,12 +153,12 @@ const NavLinkAbout = styled.button`
     width: 7rem;
 
     // 1800px
-    @media only screen and (min-width: 112.5rem) {
+    @media only screen and (min-width: 112.5em) {
       width: 8rem;
     }
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       width: 6rem;
     }
   }
@@ -171,12 +171,12 @@ const NavLinkProjects = styled.button`
     width: 10rem;
 
     // 1800px
-    @media only screen and (min-width: 112.5rem) {
+    @media only screen and (min-width: 112.5em) {
       width: 12rem;
     }
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       width: 8.3rem;
     }
   }
@@ -190,12 +190,12 @@ const NavLinkContact = styled.button`
     width: 9rem;
 
     // 1800px
-    @media only screen and (min-width: 112.5rem) {
+    @media only screen and (min-width: 112.5em) {
       width: 11.5rem;
     }
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       width: 8rem;
     }
   }

@@ -17,12 +17,10 @@ import {
   SiGatsby,
   SiGraphql,
   SiJest,
-  SiTestinglibrary,
   SiNetlify,
   SiHeroku,
   SiFirebase,
 } from 'react-icons/si';
-import { MdArrowDropDown } from 'react-icons/md';
 import '@fontsource/playfair-display';
 import styled, { css, keyframes } from 'styled-components';
 
@@ -34,12 +32,12 @@ const SectionWrapper = styled.section`
   color: #0e3f42;
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     padding: 10rem 1rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     padding: 8rem 1rem;
   }
 `;
@@ -52,23 +50,23 @@ const Title = styled.div`
   margin-bottom: 5rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 4.5rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 4rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.7rem;
     margin-bottom: 4rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 3.5rem;
     margin-bottom: 3rem;
   }
@@ -81,12 +79,12 @@ const AboutMe = styled.div`
   margin-bottom: 14rem;
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     margin-bottom: 9rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     margin-bottom: 7rem;
   }
 `;
@@ -100,23 +98,23 @@ const AboutMeText = styled.div`
   margin-bottom: 5rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     width: 85%;
     line-height: 2.3;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     width: 95%;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     width: 100%;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     line-height: 2.2;
   }
 `;
@@ -152,12 +150,12 @@ const ResumeBtn = styled.a`
     transition: all 0.3s;
 
     // 800px
-    @media only screen and (max-width: 50rem) {
+    @media only screen and (max-width: 50em) {
       font-size: 2rem;
     }
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       font-size: 1.7rem;
     }
   }
@@ -180,23 +178,23 @@ const SubTitle = styled.h2`
   z-index: 5;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 3.8rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 3.5rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.2rem;
     margin-bottom: 3rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 3rem;
   }
 
@@ -214,13 +212,13 @@ const SubTitle = styled.h2`
     transform: translateX(-50%) skewX(-30deg);
 
     // 600px
-    @media only screen and (max-width: 37.5rem) {
+    @media only screen and (max-width: 37.5em) {
       width: 22rem;
       height: 1.3rem;
     }
 
     // 450px
-    @media only screen and (max-width: 28.125rem) {
+    @media only screen and (max-width: 28.125em) {
       width: 19rem;
       height: 1.2rem;
     }
@@ -236,19 +234,19 @@ const Skills = styled.div`
   margin: 0 auto;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     width: 95%;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     width: 100%;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
-    justify-content: center;
+  @media only screen and (max-width: 37.5em) {
     flex-wrap: wrap;
+    justify-content: center;
     align-content: space-between;
   }
 `;
@@ -259,7 +257,7 @@ const Skill = styled.div`
   align-items: center;
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     margin-bottom: 0.9rem;
 
     &:not(:last-child) {
@@ -268,7 +266,7 @@ const Skill = styled.div`
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     margin-bottom: 1.1rem;
 
     &:not(:last-child) {
@@ -283,17 +281,17 @@ const sharedIconStyle = css`
   margin-bottom: 0.8rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 2.7rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 2.5rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 2.2rem;
   }
 `;
@@ -362,17 +360,17 @@ const SkillName = styled.p`
   font-size: 1.5rem;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 1.3rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 1.2rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 1.1rem;
   }
 `;

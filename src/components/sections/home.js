@@ -29,29 +29,29 @@ const HeaderMain = styled.div`
   align-items: center;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     margin-top: 11rem;
   }
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     width: 90%;
     margin-left: 5%;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     margin-top: 9rem;
     flex-direction: column-reverse;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     margin-top: 8rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.12em) {
     margin-top: 6rem;
   }
 `;
@@ -66,12 +66,12 @@ const HeaderLeft = styled.div`
   justify-content: center;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     padding-right: 4rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     flex: 0 1 40%;
     padding-right: 0;
     width: 100%;
@@ -81,7 +81,7 @@ const HeaderLeft = styled.div`
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     flex: 0 1 30%;
   }
 `;
@@ -92,28 +92,28 @@ const Title = styled.h1`
   margin-bottom: 2rem;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 7.5rem;
   }
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     font-size: 4.7rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 4rem;
     margin-bottom: 1.3rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.5rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 3rem;
     margin-bottom: 0.2rem;
   }
@@ -125,22 +125,22 @@ const Text = styled.div`
   margin-bottom: 3rem;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 8.5rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 6rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 5.5rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 7rem;
     word-spacing: 3px;
   }
@@ -156,26 +156,26 @@ const HeaderImage = styled.div`
   background-size: cover;
 
   // 1200px
-  @media only screen and (max-width: 75rem) {
+  @media only screen and (max-width: 75em) {
     flex: 0 1 40%;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     flex: 0 1 50%;
     margin: 5% 0;
     width: 50%;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     flex: 0 1 56%;
     margin: 7% 0;
     width: 70%;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     flex: 0 1 50%;
     margin: 10% 0;
     width: 85%;
@@ -192,7 +192,7 @@ const Button = styled.button`
   cursor: pointer;
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     bottom: 1rem;
   }
 `;
@@ -215,22 +215,22 @@ const ButtonIcon = styled(IoIosArrowDown)`
   animation: ${glowing} 2s infinite;
 
   // 1800px
-  @media only screen and (min-width: 112.5rem) {
+  @media only screen and (min-width: 112.5em) {
     font-size: 5rem;
   }
 
   // 800px
-  @media only screen and (max-width: 50rem) {
+  @media only screen and (max-width: 50em) {
     font-size: 3.5rem;
   }
 
   // 600px
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.3rem;
   }
 
   // 450px
-  @media only screen and (max-width: 28.125rem) {
+  @media only screen and (max-width: 28.125em) {
     font-size: 2.8rem;
   }
 `;
