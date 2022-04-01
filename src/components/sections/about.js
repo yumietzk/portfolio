@@ -97,7 +97,7 @@ const AboutMeText = styled.div`
   margin: 0 auto;
   text-align: center;
   line-height: 2.5;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5rem;
 
   // 1200px
   @media only screen and (max-width: 75rem) {
@@ -119,71 +119,6 @@ const AboutMeText = styled.div`
   @media only screen and (max-width: 28.125rem) {
     line-height: 2.2;
   }
-`;
-
-const ArrowWrapper = styled.div`
-  height: 10rem;
-  margin-bottom: 3rem;
-  position: relative;
-
-  // 450px
-  @media only screen and (max-width: 28.125rem) {
-    height: 8rem;
-  }
-`;
-
-const moveDown = keyframes`
-  0%{
-    transform: translate(0);
-    font-size: 4rem;
-  }
-
-  50% {
-    transform: translateY(50%);
-    font-size: 6rem;
-  }
-
-
-  100% {
-    transform: translateY(100%);
-    font-size: 8rem;
-  }
-
-  // 600px
-  @media only screen and (max-width: 37.5rem) {
-    0%{
-      font-size: 3.5rem;
-    }
-    
-    50% {
-      font-size: 5rem;
-    }
-    
-    
-    100% {
-      font-size: 6.5rem;
-    }
-  }
-
-  // 450px
-  @media only screen and (max-width: 28.125rem) {
-    0%{
-      transform: translate(0);
-    }
-    
-    50% {
-      transform: translateY(30%);
-    }
-    
-    100% {
-      transform: translateY(60%);
-    }
-  }
-`;
-
-const ArrowIcon = styled(MdArrowDropDown)`
-  color: #081217;
-  animation: ${moveDown} 3s linear infinite;
 `;
 
 const glowing = keyframes`
@@ -411,10 +346,6 @@ const JestIcon = styled(SiJest)`
   ${sharedIconStyle}
 `;
 
-// const RTLIcon = styled(SiTestinglibrary)`
-//   ${sharedIconStyle}
-// `;
-
 const NetlifyIcon = styled(SiNetlify)`
   ${sharedIconStyle}
 `;
@@ -469,9 +400,6 @@ const About = () => {
         <AboutMeText>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
         </AboutMeText>
-        <ArrowWrapper>
-          <ArrowIcon />
-        </ArrowWrapper>
         <ResumeBtn href={data.mdx.frontmatter.resume} target="_blank">
           Resume
         </ResumeBtn>
@@ -522,10 +450,6 @@ const About = () => {
           <JestIcon />
           <SkillName>Jest</SkillName>
         </Skill>
-        {/* <Skill>
-          <RTLIcon />
-          <SkillName>React Testing Library</SkillName>
-        </Skill> */}
         <Skill>
           <GithubIcon />
           <SkillName>Github</SkillName>

@@ -14,13 +14,6 @@ const Head = () => {
   `);
 
   return <Helmet title={data.site.siteMetadata.title} />;
-  // return (
-  //   <Helmet>
-  //     <title>{data.site.siteMetadata.title}</title>
-  //     <meta name="description" content="Yumie's Portfolio" />
-  //     <meta name="viewport" content="target-densitydpi=medium-dpi" />
-  //   </Helmet>
-  // );
 };
 
 export default Head;

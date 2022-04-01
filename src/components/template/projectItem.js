@@ -49,7 +49,7 @@ const Card = styled.div`
   height: 100%;
   width: 100%;
   object-fit: contain;
-  box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 6px 6px 3px rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   overflow: hidden;
 
